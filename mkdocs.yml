@@ -1,7 +1,7 @@
 site_name: Nate's CTF Writeups
 
 theme:
-    name: 'readthedocs'
+    name: 'mkdocs'
     palette:
 
     # Light mode
