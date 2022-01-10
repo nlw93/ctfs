@@ -6,9 +6,6 @@ Currently I'm working through The Ultimate OSCP Guide by John J. Hacking. I've d
 Feel free to look around, reach out if something is amiss.
 
 
-# About this site
-This site is being made in Obsidian markdown editor to edit content. Then a github project is placed in the Obsidian vault. On commits, github's workflow builds the static pages which are then hosted as a github page.
-
 # Fixes (my to-do list)
 - The way I've been posting pictures is broken with this publish method. I need to look into a way to fix this for a lot of broken images.
 - All the instructions say to point the page at gh-pages/docs but in reality it should point to the root dir - (evidenced by the .nojeckl file)
