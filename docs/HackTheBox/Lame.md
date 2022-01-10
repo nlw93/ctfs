@@ -1,5 +1,5 @@
 # Recon
-## HTB tags
+## tags
 - injection
 - cms exploit
 
@@ -16,17 +16,6 @@ OS fingerprint not ideal because: Missing a closed TCP port so results incomplet
 Aggressive OS guesses: OpenWrt White Russian 0.9 (Linux 2.4.30) (92%), Linux 2.6.23 (92%)
 ```
 
-# Weaponization
-## Exploit DB
-![[ab2baa1347e14f37835ea29c7efea05d.png]]
-![[50b32bceb31d4ad99aef6d28501d107c.png]]
-![[f8619778ca634df8b4f36285d0d32989.png]]
-
-## HackTricks
-https://book.hacktricks.xyz/pentesting/pentesting-ftp
-https://book.hacktricks.xyz/pentesting/pentesting-ssh
-https://book.hacktricks.xyz/pentesting/pentesting-smb
-https://book.hacktricks.xyz/pentesting/3632-pentesting-distcc
 
 # Exploitation
 I decided to start with the odd man out **distcc**.
@@ -76,21 +65,5 @@ PORT     STATE SERVICE     VERSION
 8009/tcp open  ajp13?
 ```
 
-# CVEs from LinPeas
-CVE-2018-14665
-CVE-2016-5195
-CVE-2013-0268
-CVE-2010-4347
-CVE-2010-4073
-CVE-2010-3850
-CVE-2010-3848
-CVE-2010-3437
-CVE-2010-3081
-CVE-2010-2959
-CVE-2010-1146
-CVE-2010-0415
-CVE-2009-3547
-CVE-2009-2692
-CVE-2008-0600
 
 ![[Pasted image 20220103215557.png]]
