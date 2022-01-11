@@ -1,10 +1,11 @@
 # Lame
 
-## tags
+## Recon
+The description for this box mentions
 - injection
 - cms exploit
 
-# Scan
+### Port Scan
 ```
 21/tcp   open  ftp         syn-ack ttl 63 vsftpd 2.3.4
 |_ftp-anon: Anonymous FTP login allowed (FTP code 230)
@@ -18,22 +19,21 @@ Aggressive OS guesses: OpenWrt White Russian 0.9 (Linux 2.4.30) (92%), Linux 2.6
 ```
 
 
-# Exploitation
-I decided to start with the odd man out **distcc**.
-Hacktricks recommended checking if the metasploit module **exploit/unix/misc/distcc_exec** is applicable.
+## Exploitation
+I decided to start with the odd service I hadn't seen before: **distcc**.
 
-Sure enough, I got a **daemon** account.
+Hacktricks recommended checking if the metasploit module `exploit/unix/misc/distcc_exec` is applicable. Sure enough, I got a **daemon** account with this exploit. Thanks again HackTricks (all praise the xyz tld!)
 
-![[190f47ced7744201bc8d99202531a032.png]]
+![[190f47ced7744201bc8d99202531a032.png]]  
 user `ebe6a4bdd37d05257c96607fb05b4486`
 
-# Enum from the inside
-Users
+## Looking around
+### Users
 ![[2019d3282e5a4b13a2c92f0de23f7ef0.png]]
-Listening ports
+#### Listening ports
 ![[0f35a21db4be47449ade747c2d9ea1e6.png]]
 
-## Local port scan
+### Local port scan
 `nmap -sV -T5 127.0.0.1`
 ```
 Starting Nmap 4.53 ( http://insecure.org ) at 2021-11-09 23:19 EST
@@ -66,5 +66,6 @@ PORT     STATE SERVICE     VERSION
 8009/tcp open  ajp13?
 ```
 
+At this point I was stuck. I came back to this box later and was able to get root with the pictured metasploit module. Can't quite remember if I found this myself or looked into a write-up. Reminder to update this page if I find notes from this session.
 
 ![[Pasted image 20220103215557.png]]

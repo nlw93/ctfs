@@ -1,34 +1,34 @@
-After a port scan, there are only 2 ports exposed  
+# Shocker
 
+## Recon
+Only 2 ports exposed  
 - 2222: ssh
 - 80: apache webserver
 
+The running version of SSH doesn't have any public exploits, so it seems pretty obvious the target will be a website for this challenge.
+
 ## Enumeration
+Nothing stood out from the scanning docs. I had to step back and really ask myself some fundamental questions to move forward on this one.
 
 ### What does it do?
 
 I've only been able to see the homepage `index.html` which appears to be a static page with a picture of a bug about to squash itself.
 
-There is an ETag: `"89-559ccac257884"` but it doesn't seem to decode to anything useful.
-
-
-
 ### What language is it written in?
 
-403 errors on aspx, asp, jsp, php.
+Based on some feroxbuster output (403 errors) the site seems to have the following filetypes `aspx`, `asp`, `jsp`, `php`.
 
 ### What server software is the application running on?
 
-Apache httpd 2.4.18 ((Ubuntu))
+Apache httpd 2.4.18 (Ubuntu)
 
-
-
-## Walkthrough
+## Getting help
 I peaked at the walkthrough because I was lost.
-No shocker - this machine was built to practice shellshock
-On apache, the `cgi-bin` folder contains scripts. The scripts are accessed via web, run server side, then returned with an HTTP reply. Shellshock provides input that hijacks the server-side shell run.
+No shocker - this machine was built to practice shellshock.  
 
-I also saw in the walkthrough that the target script is `/cgi-bin/user.sh`. But I want to prove this with a scan.
+On apache, the `cgi-bin` folder contains scripts. The scripts are accessed via web, run server side, then returned with an HTTP reply. Shellshock provides input that hijacks the server-side shell run. I also saw in the walkthrough that the target script is `/cgi-bin/user.sh`. 
+
+But I want to prove this with a scan.
 
 ## fuzzing for shellshock
 Found a shellshock endpoint by running
@@ -37,15 +37,15 @@ feroxbuster -u http://10.10.10.56:80/cgi-bin/ -t 10 -w /usr/share/wordlists/dirb
 ```
 ![[Pasted image 20220106200355.png]]
 
-
-Now to exploit it.
-![[Pasted image 20220106200636.png]]
+## Exploitation
 
 ![[Pasted image 20220106202024.png]]
 
 ![[Pasted image 20220106204959.png]]
 
 I was able to get user.txt but not enough privs for root.txt
+
+## Privilege Escalation
 
 ### Linpeas findings
 
@@ -78,6 +78,3 @@ sudo perl -e 'exec "/bin/sh";'
 ```
 
 ![[Pasted image 20220106210114.png]]
-
-## Root Flag
-`52c2715605d70c7619030560dc1ca467`
