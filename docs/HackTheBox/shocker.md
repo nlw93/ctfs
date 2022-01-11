@@ -51,7 +51,7 @@ I was able to get user.txt but not enough privs for root.txt
 
 > Sudo version 1.8.16
 
-> ╔══════════╣ Executing Linux Exploit Suggester 2
+> ╔══════════╣ Executing Linux Exploit Suggester 2  
 > ╚ https://github.com/jondonas/linux-exploit-suggester-2  
 >   
 > [1] af_packet  

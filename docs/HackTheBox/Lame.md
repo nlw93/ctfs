@@ -27,7 +27,8 @@ Hacktricks recommended checking if the metasploit module `exploit/unix/misc/dist
 ![[190f47ced7744201bc8d99202531a032.png]]  
 user `ebe6a4bdd37d05257c96607fb05b4486`
 
-## Looking around
+## Privilege Escalation
+
 ### Users
 ![[2019d3282e5a4b13a2c92f0de23f7ef0.png]]
 
