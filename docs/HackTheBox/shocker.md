@@ -10,19 +10,19 @@ The running version of SSH doesn't have any public exploits, so it seems pretty 
 ## Enumeration
 Nothing stood out from the scanning docs. I had to step back and really ask myself some fundamental questions to move forward on this one.
 
-### What does it do?
+#### What does it do?
 
 I've only been able to see the homepage `index.html` which appears to be a static page with a picture of a bug about to squash itself.
 
-### What language is it written in?
+#### What language is it written in?
 
 Based on some feroxbuster output (403 errors) the site seems to have the following filetypes `aspx`, `asp`, `jsp`, `php`.
 
-### What server software is the application running on?
+#### What server software is the application running on?
 
 Apache httpd 2.4.18 (Ubuntu)
 
-## Getting help
+### Getting help
 I peaked at the walkthrough because I was lost.
 No shocker - this machine was built to practice shellshock.  
 
@@ -30,7 +30,7 @@ On apache, the `cgi-bin` folder contains scripts. The scripts are accessed via w
 
 But I want to prove this with a scan.
 
-## fuzzing for shellshock
+### fuzzing for shellshock
 Found a shellshock endpoint by running
 ```bash
 feroxbuster -u http://10.10.10.56:80/cgi-bin/ -t 10 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x "sh" -v -k -n -o /home/nate/hackthebox/shocker/results/scans/tcp80/tcp_80_http_feroxbuster_cgi-bin.txt
