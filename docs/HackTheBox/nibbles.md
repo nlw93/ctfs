@@ -1,10 +1,18 @@
+# Nibbles
+
+## Recon
 Port scan shows an Apache webserver running on port 80.
-Going to the site reveals a static HTML page. In the HTML comments there is a reference to the `/nibbleblog/` site. Ran feroxbuster agains this directory and found `/admin/` as wel as `/admin.php`. The second is a login page.
+Going to the site reveals a static HTML page. In the HTML comments there is a reference to the `/nibbleblog/` site.  
 
-Got stuck here, I tried SQL injections, bruteforce and other tactics, but the password is the name of the box. SMH, better add this to the Ragrats list. Maybe I should add a word scraper to create a dictionary and run that against logins if I get stuck like lthis in the future.
-User: `admin`
-pass: `nibbles`
+Ran feroxbuster agains this directory and found `/admin/` as wel as `/admin.php`. The second is a login page.
 
+## Getting help
+Got stuck here, I tried SQL injections, bruteforce and other tactics, but the password is the name of the box.
+
+> User: `admin`
+> pass: `nibbles`
+
+## Exploitation
 Searching for nibbles in metsploit is the follwing module: `exploit/multi/http/nibbleblog_file_upload`
 This exploit matches our target application's version. I provided credentials achieved inthe last step which gave a shell as a normal user. I was able to get user.txt
 
