@@ -30,7 +30,8 @@ user `ebe6a4bdd37d05257c96607fb05b4486`
 ## Looking around
 ### Users
 ![[2019d3282e5a4b13a2c92f0de23f7ef0.png]]
-#### Listening ports
+
+### Listening ports
 ![[0f35a21db4be47449ade747c2d9ea1e6.png]]
 
 ### Local port scan
