@@ -9,17 +9,7 @@ The webserver has Drupal 7 running on IIS 7.5
 
 ### Enumerating the webserver
 
-The webserver is using the following tech:  
-
-- IIS 7.5  
-	- Potentially vulnerable to: 19033
-- PHP 5.4.28  
-	- 35145, and many more.
-- Drupal 7
-	- Many, need more enumeration to see what applies.
-- ASP.NET
-
-There are some interesting Disallows in `robots.txt`.
+There are some interesting entries in `robots.txt`:  
 
 ```bash
 # Directories
@@ -92,7 +82,3 @@ There are also some interesting findings by feroxbuster
 200      123l      714w     5382c http://10.10.10.9/ReadMe.txt
 
 ```
-
-# Exploitation
-
-I'm leaning toward `/xmlrpc.php` as an attack surface. I've seen it vulnerable in the past.
