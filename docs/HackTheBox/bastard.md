@@ -17,48 +17,6 @@ The webserver is using the following tech:
 There are some interesting Disallows in `robots.txt`.
 
 ```bash
-                                                                                                                                                              
-┌──(nate@kali-Dell)-[~/ctfs/docs/HackTheBox]
-└─$ tmux ls        
-hackn: 2 windows (created Wed Jan  5 21:52:14 2022) (attached)
-                                                                                                                                                              
-┌──(nate@kali-Dell)-[~/ctfs/docs/HackTheBox]
-└─$ tmux a -t hackn
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Directories
 Disallow: /includes/
 Disallow: /misc/
@@ -101,7 +59,35 @@ Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
 ```
 
-#### IIS 7.5
-#### Drupal 7
+There are also some interesting findings by feroxbuster
+
+```bash
+200      159l      413w     7583c http://10.10.10.9/0
+200      159l      413w     7583c http://10.10.10.9/node
+200        1l        7w       62c http://10.10.10.9/rest
+200       90l      243w     2189c http://10.10.10.9/robots.txt
+200      152l      394w     7420c http://10.10.10.9/user
+200      159l      413w     7583c http://10.10.10.9/0
+200      159l      413w     7583c http://10.10.10.9/index.php
+200       45l      262w     1717c http://10.10.10.9/install.mysql.txt
+200       44l      290w     1874c http://10.10.10.9/install.pgsql.txt
+200      159l      413w     7583c http://10.10.10.9/node
+200        1l        7w       62c http://10.10.10.9/rest
+200       90l      243w     2189c http://10.10.10.9/robots.txt
+200      152l      394w     7420c http://10.10.10.9/user
+200        1l        6w       42c http://10.10.10.9/xmlrpc.php
+200      152l      394w     7420c http://10.10.10.9/user
+200      159l      413w     7583c http://10.10.10.9/node
+200      159l      413w     7583c http://10.10.10.9/
+200      159l      413w     7583c http://10.10.10.9/0
+200      175l      510w     9063c http://10.10.10.9/User
+200        1l        7w       62c http://10.10.10.9/rest
+200        1l        7w       62c http://10.10.10.9/REST
+200      175l      510w     9063c http://10.10.10.9/USER
+200      123l      714w     5382c http://10.10.10.9/ReadMe.txt
+
+```
+
+
 
 There are many exploits available for the various modules of drupal 7. I should try to get a better picture of the attack surface before picking one.
