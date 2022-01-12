@@ -9,9 +9,12 @@ The webserver has Drupal 7 running on IIS 7.5
 
 The webserver is using the following tech:  
 
-- IIS 7.5
-- PHP 5.4.28
+- IIS 7.5  
+	- Potentially vulnerable to: 19033
+- PHP 5.4.28  
+	- 35145, and many more.
 - Drupal 7
+	- Many, need more enumeration to see what applies.
 - ASP.NET
 
 There are some interesting Disallows in `robots.txt`.
