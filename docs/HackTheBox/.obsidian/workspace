@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "97bfe9ffc0c0a5e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d015ee96f75e4d2",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "beep.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e1f56175b467a425",
+    "type": "split",
+    "children": [
+      {
+        "id": "3db7d6cbba24066f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "889051a61bbec7ac",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "1cae23c8da56d8e7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e0272d310a0a000a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d3d0b89c1e677ad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ee07f7fb5542516",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "beep.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8d015ee96f75e4d2",
+  "lastOpenFiles": [
+    "beep.md",
+    "bastard.md"
+  ]
+}
