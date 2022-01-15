@@ -66,6 +66,13 @@ I was able to use forced browsing to find user with ID 3, which was the only mys
 Looking at the admin user, there appears to be some private posts and discussions:  
 ![[Pasted image 20220115111926.png]]
 
+## Exploitation
 
+Since I didn't find any other way to break the authentication mechanism, I decided to try a brute force attack. I decided to test the known usernames with a few wordlists. Since the usernames appear to follow a Greek Mythology theme, I will be using [this Greek wordlist]() to fuzz the 3 users.
 
+![[Pasted image 20220115130509.png]]  
+> User: `kostas`
+> Pass: `123123123`
+
+I logged in to the secret forum, but this user has nothing useful. The email provided for this user was kostas@testest.com - which makes me think this account is worthless. Of these accounts, the only one that also works in `/wp-admin/` is **admin**.
 
