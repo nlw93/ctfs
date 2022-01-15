@@ -38,5 +38,34 @@ Maybe I can inject a user?
 ![[Pasted image 20220105073120.png]]
 
 > NOTE - brainfuck (the name of this box) is also the name of an encoding algorithm on [this decoder](https://www.cachesleuth.com/multidecoder/). 
+> Turns out this is a meme programming language. Read about it [on Wikipedia](https://en.wikipedia.org/wiki/Brainfuck)
 
-At this point, it seems I should be looking for some brainfuck-encoded value and try to decode it.
+At this point, it seems I should be looking for some brainfuck-encoded value and try to decode it, though after reading about brainfuck on wikipedia the author of this challenge likely put many rabbit-holes in place which will make it difficult to find the correct attack vector.
+
+As I review scan results, I wonder if there is a passphrase associated with the TLS certificate. If I crack it, it may be the same pw for wordpress.
+
+On the cert there is an AltName
+
+![[Pasted image 20220115102857.png]]
+I added the altname to `/etc/hosts`, for the same IP as `brainfuck.htb`. And sure enough there's a super secret hidden forum!
+
+![[Pasted image 20220115103149.png]]
+
+Also found a session cookie! Maybe this is the brainfuck-encoded value! Couldn't decode the cookie.
+
+I was able to register an account.
+Successful login looks like this:  
+![[Pasted image 20220115112137.png]]
+
+- There's another cookie named `flarum_remember`, which also doesn't decode to anything obvious.
+- My created user has an ID of 4. Wonder who the other users are?
+
+I was able to use forced browsing to find user with ID 3, which was the only mystery user (I already saw admin is 1 and restis is 2, I was 4)
+![[Pasted image 20220115112350.png]]
+
+Looking at the admin user, there appears to be some private posts and discussions:  
+![[Pasted image 20220115111926.png]]
+
+
+
+
