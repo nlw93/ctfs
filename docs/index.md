@@ -1,6 +1,10 @@
 # About this site
 
-This site is to document my journey to OSCP. Each page is a brief write-up of how I hacked into a VM in a capture the flag (ctf). I started this site sort of late in my journey, so many of the write-ups will be for [HackTheBox](https://app.hackthebox.com)
+This site is to document my journey to OSCP. Each page is a brief write-up of how I hacked into a VM in a capture the flag (ctf) challenge. I started this website late in my journey, so many of the posted write-ups will be for [HackTheBox](https://hackthebox.com).
+
+## What is a CTF?
+
+Capture the flag is a game where each team has a flag they must guard. The first team to steal the other team's flag is the winner. In computer science, the game has been adopted as a way to learn and practice various real world techniques. A few I've played and really liked: [HackTheBox](https://hackthebox.com/), [TryHackMe](https://tryhackme.com/), [OverTheWire](https://overthewire.org/)
 
 ## What is the OSCP?
 
