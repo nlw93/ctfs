@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "WIP-Beep.md",
-            "mode": "source"
+            "file": "brainfck.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WIP-Beep.md",
+                "file": "brainfck.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,8 @@
   },
   "active": "8d015ee96f75e4d2",
   "lastOpenFiles": [
+    "brainfck.md",
+    "2019d3282e5a4b13a2c92f0de23f7ef0.png",
     "WIP-Beep.md",
     "WIP-Bastard.md",
     "Shocker.md",
