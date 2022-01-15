@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "beep.md",
-            "mode": "source"
+            "file": "[WIP] Bastard.md",
+            "mode": "preview"
           }
         }
       }
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e0272d310a0a000a",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "beep.md",
+                "file": "[WIP] Bastard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,9 +88,11 @@
   },
   "active": "8d015ee96f75e4d2",
   "lastOpenFiles": [
-    "beep.md",
-    "Legacy.md",
+    "[WIP] Bastard.md",
+    "[WIP] Beep.md",
     "Lame.md",
-    "bastard.md"
+    "Legacy.md",
+    "Nibbles.md",
+    "Shocker.md"
   ]
 }

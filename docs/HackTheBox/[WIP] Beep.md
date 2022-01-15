@@ -116,6 +116,46 @@ An nmap script picked up `CVE-2006-3392`
 ![[Pasted image 20220114213707.png]]  
 This CVE is linked to [EDB-1997](http://www.exploit-db.com/exploits/1997/).  
 
+Reviewing the exploit shows usage on line 50. No changes are necessary; all variables are provided at runtime instead of hardcoded in varaibles.  
+![[Pasted image 20220114214954.png]]
+
+This exploit is throwing errors:  
+![[Pasted image 20220114215506.png]]
+
+I found [this answer on StackOverflow](https://stackoverflow.com/a/6382581).  
+![[Pasted image 20220114215646.png]]  
+Installing the proper version for my php package.  
+
+To identify php version:
+```bash
+php --version
+```
+Then install proper version:
+```bash
+sudo apt install php7.4-curl
+```
+
+![[Pasted image 20220114215957.png]]
+
+It appears this exploit is not working even with php-curl installed.
+
+There are a bunch of SSL errors in the NMAP output. It seems Autorecon was scanning using HTTP instead of HTTPS. Will re-run some scans with https.
+
+These commands should be re-run using HTTPS instead of HTTP.
+```
+curl -sSik https://10.10.10.7:10000/ &&
+curl -sSikf https://10.10.10.7:10000/.well-known/security.txt &&
+curl -sSikf https://10.10.10.7:10000/robots.txt &&
+
+nmap -vv --reason -Pn -T4 -sV -p 10000 --script="banner,(https* or ssl*) and not (brute or broadcast or dos or external or https-slowloris* or fuzzer)" -oN "/home/nate/hackthebox/beep/scans/tcp10000/tcp_10000_https_nmap.txt" -oX "/home/nate/hackthebox/beep/scans/tcp10000/xml/tcp_10000_https_nmap.xml" 10.10.10.7 &&
+
+whatweb --color=never --no-errors -a 3 -v https://10.10.10.7:10000 2>&1
+```
+
+```bash
+feroxbuster -u https://10.10.10.7:10000/ -t 10 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x "php,bin,txt" -v -k -n -o /home/nate/hackthebox/beep/scans/tcp80/tcp_80_http_feroxbuster_https.txt
+```
+
 
 
 ## Privilege Escalation.
