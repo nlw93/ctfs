@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Shocker.md",
-            "mode": "preview"
+            "file": "WIP-Beep.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shocker.md",
+                "file": "WIP-Beep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,11 +88,11 @@
   },
   "active": "8d015ee96f75e4d2",
   "lastOpenFiles": [
+    "WIP-Beep.md",
     "Shocker.md",
+    "WIP-Bastard.md",
     "Nibbles.md",
     "Legacy.md",
-    "Lame.md",
-    "WIP-Beep.md",
-    "WIP-Bastard.md"
+    "Lame.md"
   ]
 }
