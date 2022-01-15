@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "[WIP] Bastard.md",
+            "file": "Shocker.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "[WIP] Bastard.md",
+                "file": "Shocker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,11 +88,11 @@
   },
   "active": "8d015ee96f75e4d2",
   "lastOpenFiles": [
-    "[WIP] Bastard.md",
-    "[WIP] Beep.md",
-    "Lame.md",
-    "Legacy.md",
+    "Shocker.md",
     "Nibbles.md",
-    "Shocker.md"
+    "Legacy.md",
+    "Lame.md",
+    "WIP-Beep.md",
+    "WIP-Bastard.md"
   ]
 }
