@@ -69,14 +69,14 @@ https webserver has a few webpages
 200       35l      111w     1785c https://10.10.10.7/register.php
 ```
 
-The site on 443 is an Elastics CRM login page.
+## Enumeration
 
+The site on 443 is an Elastics CRM login page.  
 ![[Pasted image 20220113213548.png]]
 
 ## Exploitation
 
-It might be this, considering the LFI tag.
-
+It might be this, considering the LFI tag.  
 ![[Pasted image 20220113212032.png]]
 
 That exploit doesn't work, however it does help to enumerate vtigercrm. I checked, and sure enough it's on this box. The login page even discloses the version `5.1.0`
@@ -107,7 +107,18 @@ I was able to get the user flag using LFI
 
 ![[Pasted image 20220113215313.png]]
 
-# Privilege Escalation.
+## more Enumeration
+
+There is also a webserver on port 10000.  
+![[Pasted image 20220114211041.png]]
+
+An nmap script picked up `CVE-2006-3392`  
+![[Pasted image 20220114213707.png]]  
+This CVE is linked to [EDB-1997](http://www.exploit-db.com/exploits/1997/).  
+
+
+
+## Privilege Escalation.
 
 I still don't have code execution. I should probably look around at other files to see if any credentials can be read. Or maybe I can poison some logs and gain code exection.
 
