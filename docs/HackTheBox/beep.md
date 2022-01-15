@@ -109,4 +109,7 @@ I was able to get the user flag using LFI
 
 # Privilege Escalation.
 
-I still don't have command execution. I should probably look around at other files to see if any credentials can be read.
+I still don't have code execution. I should probably look around at other files to see if any credentials can be read. Or maybe I can poison some logs and gain code exection.
+
+## Searching for logs to poison.
+
