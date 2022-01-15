@@ -1,6 +1,9 @@
 # Nibbles
 
 ## Recon
+Tags for [this box](https://app.hackthebox.com/machines/121) are:  
+> - File Misconfiguration
+> - Web
 
 Port scan shows an Apache webserver running on port 80. The site appears to be a static HTML page. In the HTML comments there is a reference to the `/nibbleblog/` site.  
 

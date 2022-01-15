@@ -1,10 +1,10 @@
 # Lame
 
 ## Recon
-The description for this box mentions  
 
-- injection
-- cms exploit
+Tags for [this box](https://app.hackthebox.com/machines/1) are:  
+> - injection
+> - cms exploit
 
 ### Port Scan
 ```

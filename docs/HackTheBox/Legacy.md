@@ -2,7 +2,11 @@
 
 ## Recon
 
-A port scan shows only 2 open TCP ports: `139`, and `445`. Nmap guessed the OS was Windows XP or similar.
+Tags for [this box](https://app.hackthebox.com/machines/2) are:
+> - Windows
+> - Injection
+
+A port scan on shows only 2 open TCP ports: `139`, and `445`. Nmap guessed the OS was Windows XP or similar.
 
 ```bash
  PORT     STATE  SERVICE       REASON          VERSION  
