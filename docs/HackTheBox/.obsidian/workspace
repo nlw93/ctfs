@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Legacy.md",
+            "file": "Nibbles.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Legacy.md",
+                "file": "Nibbles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,13 +88,13 @@
   },
   "active": "5bdf4c4204ff5a31",
   "lastOpenFiles": [
+    "Nibbles.md",
     "Legacy.md",
     "Lame.md",
     "Granny.md",
     "Brainfuck.md",
     "Beep.md",
     "Bastard.md",
-    "Nibbles.md",
     "Shocker.md",
     "2019d3282e5a4b13a2c92f0de23f7ef0.png"
   ]

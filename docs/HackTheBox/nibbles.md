@@ -28,3 +28,38 @@ With credentials in hand, the nibbleblog exploit grants a shell as a normal user
 ## Privilege Escalation
 
 The host is running Ubuntu 16.04.3. When searched in metasploit there is the following module: `exploit/linux/local/bpf_sign_extension_priv_esc` which grants root access.
+
+
+## Review/Compare
+
+Both paths were mostly the same at first:
+
+> Scan identified Apache:80
+> HTML comments disclosed `/nibbleblog/` site
+> Feroxbuster found `/admin.php` logon page.
+> Found `multi/http/nibbleblog_file_upload`
+
+This is where we split
+My path:
+
+> Got creds from walkthrough.
+> `nibbleblog_file_upload` grants user access.
+>  Found `linux/local/bpf_sign_extension_priv_esc`  by searching for PE on Ubuntu 16.04.3
+>  grans root access.
+
+HTB writeup:
+
+> Guessed the correct password
+> `nibbleblog_file_upload` grants user access
+> `sudo -l` revealed the ability to run `/home/nibbler/personal/stuff/monitor.sh`
+> `bash -i > monitor.sh`
+> `sudo monitor.sh`
+> grants root
+
+
+### Analysis
+I failed to guess the password (which was the name of the blog). I remember seeing `monitor.sh` and attempting to exploit it but I wasn't able to get it to work. I think the missing piece here was to create the script on the attack machine then upload to the victim - I was trying to create the script on the victim, which wasn't working.
+
+#### Lessons Learned
+> Sometimes you can upload a file but not create one.
+> If I focused more on the CyberKillchain, maybe this would have fell under "delivery" and I would have seen the other channel (upload vs direct write.)
