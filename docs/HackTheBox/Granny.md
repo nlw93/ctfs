@@ -76,3 +76,8 @@ System Info
 > [01]: Q147222  
 > Network Card(s):           N/A 
 ```
+
+
+## Privesc
+
+I used the same technique to upload winpeas.bat to do some more enumeration.
