@@ -2,7 +2,12 @@
 `* still in progress`
 ## Recon
 
-Tags: LFI, web 
+Tags for [this box](https://app.hackthebox.com/machines/5):  
+> - LFI
+> - Web 
+
+Difficulty:
+> Easy
 
 ### Scan findings
 ```nmap

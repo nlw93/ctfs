@@ -6,6 +6,9 @@ Tags for [this box](https://app.hackthebox.com/machines/1) are:
 > - injection
 > - cms exploit
 
+Difficulty:  
+> Easy
+
 ### Port Scan
 ```
 21/tcp   open  ftp         syn-ack ttl 63 vsftpd 2.3.4

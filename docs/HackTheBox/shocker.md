@@ -6,6 +6,9 @@ Tags for [this box](https://app.hackthebox.com/machines/108) are:
 > - Injection
 > - Web
 
+Difficulty:
+> Easy
+
 Only 2 ports exposed: 2222 (ssh), and 80 (apache)
 
 The running version of SSH doesn't have any public exploits, so it seems pretty obvious the target will be a website for this challenge.

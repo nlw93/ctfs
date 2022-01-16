@@ -1,4 +1,4 @@
-# *Brainf*ck
+# * Brainfuck
 
 `*Still in progress`
 
@@ -7,8 +7,8 @@
 The tags for [this box](https://app.hackthebox.com/machines/17) are:  
 > - Cryptography
 
-The difficulty is marked as  
-> - Insane
+Difficulty:  
+> Insane
 
 
 NGINX is running on port 443 but could not access the website by IP.

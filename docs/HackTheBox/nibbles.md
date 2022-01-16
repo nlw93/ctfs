@@ -5,6 +5,9 @@ Tags for [this box](https://app.hackthebox.com/machines/121) are:
 > - File Misconfiguration
 > - Web
 
+Difficulty:
+> Easy
+
 Port scan shows an Apache webserver running on port 80. The site appears to be a static HTML page. In the HTML comments there is a reference to the `/nibbleblog/` site.  
 
 Feroxbuster agains this directory found `/admin/` as wel as `/admin.php` (a login page). 
