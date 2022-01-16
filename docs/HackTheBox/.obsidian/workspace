@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "8d015ee96f75e4d2",
+        "id": "5bdf4c4204ff5a31",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Granny.md",
+            "file": "Legacy.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "msfvenom",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Granny.md",
+                "file": "Legacy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,15 +86,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8d015ee96f75e4d2",
+  "active": "5bdf4c4204ff5a31",
   "lastOpenFiles": [
+    "Legacy.md",
+    "Nibbles.md",
     "Granny.md",
-    "Beep.md",
     "Brainfuck.md",
     "Bastard.md",
     "Lame.md",
-    "Legacy.md",
-    "Nibbles.md",
+    "Beep.md",
     "Shocker.md",
     "2019d3282e5a4b13a2c92f0de23f7ef0.png"
   ]

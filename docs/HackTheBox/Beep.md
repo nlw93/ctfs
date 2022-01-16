@@ -163,9 +163,12 @@ feroxbuster -u https://10.10.10.7:10000/ -t 10 -w /usr/share/wordlists/dirbuster
 
 
 
-## Privilege Escalation.
+## Gotta get a shell.
 
-I still don't have code execution. I should probably look around at other files to see if any credentials can be read. Or maybe I can poison some logs and gain code exection.
+I have the user flag, but I still don't have code execution. I need to examine the options and decide which route(s) to take.
 
-## Searching for logs to poison.
+### Brainstorming: LFI to RCE
+- Poison logs
+- Maybe RFI?
+- 
 

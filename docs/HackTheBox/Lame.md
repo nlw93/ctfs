@@ -75,3 +75,30 @@ PORT     STATE SERVICE     VERSION
 At this point I was stuck. I came back to this box later and was able to get root with the pictured metasploit module. Can't quite remember if I found this myself or looked into a write-up. Reminder to update this page if I find notes from this session.
 
 ![[Pasted image 20220103215557.png]]
+
+
+## Reflect/Compare
+
+In the official write-up for this box, everything was identical except the exploitation.
+We both started with a full portscan, however I took a more arbirary route during exploitation; instead of working through the ports top-down, I just picked an interesting service I hadn't seen before.
+
+My exploit:  
+> Used `exploit/unix/misc/distcc_exec` metasploit modul
+> Which granted  user level access. I was unable to privesc
+> Later, I came back and used  `multi/samba/usermap_script`
+> Which granted root level access.
+
+HTB Writeup:
+> Use `multi/samba/usermap_script`
+> Grants root level access
+
+### Analysis
+
+While `distcc_exe` granted user level, it was a dead end as I couldn't figure out how to privesc. After this reflection, I'm confident that I 'found' the `usermap_script` exploit by looking at the writeup. This is a perfect example of **the dangers of immediately jumping to an exploit**.
+
+Lessons Learned:
+
+> DON'T just run around testing exploits. It wreckless and can lead to dead ends.
+> DO completely enumerate and try to weaponize each vector BEFORE thinking about exploitation.
+
+Exploitation should be closer to the end of my process. Put off exploitation attempts until I'm confident I have fully enumerated services/applications.
