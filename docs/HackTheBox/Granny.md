@@ -81,3 +81,46 @@ System Info
 ## Privesc
 
 I used the same technique to upload winpeas.bat to do some more enumeration.
+
+Didn't see anything obvious in the WinPEAS output, so I took a break and added an analysis/lessons learned to the other pages. One of the mistakes I made was to jump to exploitation before finishing enumeration. Enumerate, enumerate, enumerate. I'm going to try a different format for writeups on the next few boxes, switching to that format now (sorry readers, this is going to be a messy writeup).
+
+
+
+## NMAP scan results
+
+```text
+PORT   STATE SERVICE REASON          VERSION                                                                      80/tcp open  http    syn-ack ttl 127 Microsoft IIS httpd 6.0                                                      | http-methods:                                                                                                   |   Supported Methods: OPTIONS TRACE GET HEAD DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT POST                                                                                                                 |_  Potentially risky methods: TRACE DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT             |_http-title: Under Construction                                                                                  | http-webdav-scan:                                                                                               |   Server Date: Sun, 16 Jan 2022 00:28:36 GMT                                                                    |   WebDAV type: Unknown                                                                                          |   Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH                                                                                                      |   Allowed Methods: OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK                                                                                                                |_  Server Type: Microsoft-IIS/6.0                                                                                |_http-server-header: Microsoft-IIS/6.0                                                                           Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port             Device type: general purpose                                                                                      Running (JUST GUESSING): Microsoft Windows 2003|2008|2000|XP (91%)
+
+```
+
+# Services
+
+## :80 - IIS 6.0
+From [Wikipedia](https://en.wikipedia.org/wiki/Internet_Information_Services)
+
+> **Internet Information Services** (**IIS**, formerly **Internet Information Server**) is an extensible [web server](https://en.wikipedia.org/wiki/Web_server "Web server") software created by [Microsoft](https://en.wikipedia.org/wiki/Microsoft "Microsoft") for use with the [Windows NT](https://en.wikipedia.org/wiki/Windows_NT "Windows NT") family.[[2]](https://en.wikipedia.org/wiki/Internet_Information_Services#cite_note-2) IIS supports [HTTP](https://en.wikipedia.org/wiki/HTTP "HTTP"), [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2 "HTTP/2"), [HTTPS](https://en.wikipedia.org/wiki/HTTPS "HTTPS"), [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol "File Transfer Protocol"), [FTPS](https://en.wikipedia.org/wiki/FTPS "FTPS"), [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol "Simple Mail Transfer Protocol") and [NNTP](https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol "Network News Transfer Protocol"). It has been an integral part of the Windows NT family since [Windows NT 4.0](https://en.wikipedia.org/wiki/Windows_NT_4.0 "Windows NT 4.0"), though it may be absent from some editions (e.g. Windows XP Home edition), and is not active by default.
+
+### Exploit 1 - WebDav arbitrary file upload
+[HackTricks](https://book.hacktricks.xyz/pentesting/pentesting-web/put-method-webdav) explains how to upload an executable file to bypass filtering. This is the method I already did above, and I was able to get a shell as `network service`
+
+
+### Exploit 2 - WebDav buffer overflow
+[EDB-41738](https://www.exploit-db.com/exploits/41738)
+> Description:Buffer overflow in the ScStoragePathFromUrl function in the WebDAV service in Internet Information Services (IIS) 6.0 in Microsoft Windows Server 2003 R2 allows remote attackers to execute arbitrary code via a long header beginning with "If: <http://" in a PROPFIND request, as exploited in the wild in July or August 2016.  
+
+This exploit is pre-loaded with a calc.exe payload - if I want to exploit I'll need to replace the payload with a reverse shell or something similar.
+
+### Exploit 3 - IIS 6.0 Authentication Bypass
+[EDB-19033](https://www.exploit-db.com/exploits/19033)
+
+> (tested on Windows Server 2003 SP1 running PHP5)  
+Details:  
+By sending a special request to the IIS 6.0 Service running PHP the attacker can successfully bypass access restrictions.  
+>Take for example:  
+1.) IIS/6.0 has PHP installed  
+2.) There is a Password Protected directory configured  
+--> An attacker can access PHP files in the password protected  
+directory and execute them without supplying proper credentials.  
+--> Example request (path to the file): /admin::$INDEX_ALLOCATION/index.php  
+IIS/6.0 will gracefully load the PHP file inside the "admin" directory if the ::$INDEX_ALLOCATION postfix is appended to directory name.  
+This can result in accessing administrative files and under special circumstances execute arbirary code remotely.
