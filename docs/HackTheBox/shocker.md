@@ -84,3 +84,36 @@ sudo perl -e 'exec "/bin/sh";'
 ```
 
 ![[Pasted image 20220106210114.png]]
+
+
+## Reflect/Compare
+My Path:  
+> Scan finds Apache `2.4.18` on port 80  
+> Looked at walkthrough  
+> Fuzz /cgi-bin/ to find endpoint vulnerable to Shellshock.
+> Send webrequest with malicious header.  
+> Got User  
+> User can run `perl` as sudo  
+> GTFO bins for `SUDO` and `perl`
+> Root
+
+HTB Walkthrough:
+> Scan finds Apache on port 80  
+> Fuzzed and found `cgi-bin` directory  
+> Knows they're exploiting shellshock (box name + cgi-bin)  
+> Fuzzed `/cgi-bin/` for `.sh`,`.py`, and other scripting extensions  
+> Find `user.sh`  
+> Use metasploit `/multi/http/apache_mod_cgi_bash_env_exec`
+> Got User  
+> Found `perl` NOPASSWD entry.  
+> Root
+
+
+### Analysis
+There's no reason I should have looked at the writeup on this one, I'm a bit ashamed. I knew the Apache version and could see the needed exploit from EDB (using searchsploit). Based on the name of the box I figured it would require exploiting shellshock - but this was my first experience with shellshock.
+
+#### Lessons Learned
+> Go through each exploit and try to understand the exploit BEFORE using a walkthrough.
+
+
+

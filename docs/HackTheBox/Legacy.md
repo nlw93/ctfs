@@ -50,19 +50,19 @@ root: `993442d258b0e0ec917cae9e695d5713`
 
 
 
-## Review/Compare
+## Reflect/Compare
 
 My path:
-> Scanning identified Windows XP hosting smb.
-> Scanning identified missing `ms17-010` patch (CVE-2017-0143)
-> Metasploit module `windows/smb/ms17-010_eternalblue`
-> Root
+> Scanning identified Windows XP hosting smb.  
+> Scanning identified missing `ms17-010` patch (CVE-2017-0143)  
+> Metasploit module `windows/smb/ms17-010_eternalblue`  
+> Root  
 
 Walkthrough:
-> Scanning identified Windows XP hosting smb.
-> Researched Windows XP vulns - CVE-2008-4250
-> Metasploit module `windows/smb/08_067_netapi`
-> Root
+> Scanning identified Windows XP hosting smb.  
+> Researched Windows XP vulns - CVE-2008-4250  
+> Metasploit module `windows/smb/08_067_netapi`  
+> Root  
 
 ### Analysis
 I did a good job on this one. While we used differenet exploits, the path is generally the same. There are likely many other exploits that would have worked to root this box.
