@@ -1,16 +1,16 @@
 {
   "main": {
-    "id": "97bfe9ffc0c0a5e1",
+    "id": "5fd687d1bdae46ec",
     "type": "split",
     "children": [
       {
-        "id": "5bdf4c4204ff5a31",
+        "id": "070a438501542d4b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Granny.md",
-            "mode": "preview"
+            "file": "docs/index.md",
+            "mode": "source"
           }
         }
       }
@@ -18,15 +18,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e1f56175b467a425",
+    "id": "0301a0b6d13b8ef9",
     "type": "split",
     "children": [
       {
-        "id": "3db7d6cbba24066f",
+        "id": "dd12e4cf03ee756b",
         "type": "tabs",
         "children": [
           {
-            "id": "889051a61bbec7ac",
+            "id": "8793bfbaea468671",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "1cae23c8da56d8e7",
+            "id": "a3ddd31c55a5fab2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,20 +55,20 @@
     "width": 300
   },
   "right": {
-    "id": "e0272d310a0a000a",
+    "id": "d41ae2d449daf1eb",
     "type": "split",
     "children": [
       {
-        "id": "6d3d0b89c1e677ad",
+        "id": "6fe901993b6da20e",
         "type": "tabs",
         "children": [
           {
-            "id": "9ee07f7fb5542516",
+            "id": "974337ba5277efde",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Granny.md",
+                "file": "docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,16 +86,8 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5bdf4c4204ff5a31",
+  "active": "070a438501542d4b",
   "lastOpenFiles": [
-    "Granny.md",
-    "Bastard.md",
-    "Beep.md",
-    "Brainfuck.md",
-    "Lame.md",
-    "Shocker.md",
-    "Nibbles.md",
-    "Legacy.md",
-    "2019d3282e5a4b13a2c92f0de23f7ef0.png"
+    "docs/index.md"
   ]
 }

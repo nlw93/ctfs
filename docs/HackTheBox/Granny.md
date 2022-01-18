@@ -110,6 +110,11 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Internet_Information_Services)
 
 This exploit is pre-loaded with a calc.exe payload - if I want to exploit I'll need to replace the payload with a reverse shell or something similar.
 
+#### Replacing the shellcode
+![[Pasted image 20220116165456.png]]  
+
+I couldn't get this one to work, I may be doing it wrong. This attack vector seems too complex for the rating of this box anyway.
+
 ### Exploit 3 - IIS 6.0 Authentication Bypass
 [EDB-19033](https://www.exploit-db.com/exploits/19033)
 
@@ -124,3 +129,23 @@ directory and execute them without supplying proper credentials.
 --> Example request (path to the file): /admin::$INDEX_ALLOCATION/index.php  
 IIS/6.0 will gracefully load the PHP file inside the "admin" directory if the ::$INDEX_ALLOCATION postfix is appended to directory name.  
 This can result in accessing administrative files and under special circumstances execute arbirary code remotely.
+
+## Applications
+From winpeas, I was able to see the following patches not installed. There were more missing patches, but these are ones I could find potentially relevant exploits for.
+
+Since all the privilege escalation paths I found were metasploit modules, I had to migrate my shell over to metasploit:
+
+![[Pasted image 20220116185502.png]]
+
+### Task Scheduler
+MS10-092 - [EDB - 19930] This is a metasploit module. I would need to migrate shell to metasploit session before testing `windows/local/ms10_092_schelevator`
+
+#### Exploitation
+
+
+
+### Kitripod
+MS10-015 - [EDB - 11199](https://www.exploit-db.com/exploits/11199) This is also a metasploit module.
+`windows/local/ms10_015_kitrap0d`
+
+
