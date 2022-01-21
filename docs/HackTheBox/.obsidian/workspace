@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Granny.md",
+            "file": "Breadcrumbs.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Granny.md",
+                "file": "Breadcrumbs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,14 +88,15 @@
   },
   "active": "5bdf4c4204ff5a31",
   "lastOpenFiles": [
+    "Breadcrumbs.md",
     "Granny.md",
+    "Lame.md",
+    "ScriptKiddie.md",
     "Bastard.md",
     "Beep.md",
     "Brainfuck.md",
-    "Lame.md",
     "Shocker.md",
     "Nibbles.md",
-    "Legacy.md",
-    "2019d3282e5a4b13a2c92f0de23f7ef0.png"
+    "Legacy.md"
   ]
 }
