@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Breadcrumbs.md",
-            "mode": "preview"
+            "file": "Nineveh.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Breadcrumbs.md",
+                "file": "Nineveh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "5bdf4c4204ff5a31",
   "lastOpenFiles": [
+    "Nineveh.md",
+    "Beep.md",
     "Breadcrumbs.md",
     "Granny.md",
     "Lame.md",
     "ScriptKiddie.md",
     "Bastard.md",
-    "Beep.md",
     "Brainfuck.md",
     "Shocker.md",
-    "Nibbles.md",
-    "Legacy.md"
+    "Nibbles.md"
   ]
 }
