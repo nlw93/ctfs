@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "In Progress/Arctic.md",
+            "file": "Arctic.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "In Progress/Arctic.md",
+            "file": "Arctic.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "In Progress/Arctic.md",
+                "file": "Arctic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +101,7 @@
   },
   "active": "5bdf4c4204ff5a31",
   "lastOpenFiles": [
-    "In Progress/Arctic.md",
+    "Arctic.md",
     "In Progress/Bastard.md",
     "In Progress/Breadcrumbs.md",
     "In Progress/Nineveh.md",

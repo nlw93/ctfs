@@ -1,5 +1,5 @@
 # Arctic
-`Still in progress`
+
 ## Recon  
 
 The tags for [this box](https://app.hackthebox.com/machines/9) are:  
