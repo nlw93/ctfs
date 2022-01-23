@@ -1,5 +1,5 @@
-# * Granny
-`* Still in progress`
+# Granny
+`Still in progress`
 
 ## Recon
 

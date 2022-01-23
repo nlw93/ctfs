@@ -1,5 +1,5 @@
-# *Beep
-`* still in progress`
+# Beep
+`still in progress`
 ## Recon
 
 Tags for [this box](https://app.hackthebox.com/machines/5):  

@@ -1,6 +1,6 @@
 # Breadcrumbs
 
-`* Still in progress`
+`Still in progress`
 
 ## Recon
 

@@ -1,5 +1,5 @@
-# *Bastard
-`* Still in progress`
+# Bastard
+`Still in progress`
 ## Recon  
 
 The tags for [this box](https://app.hackthebox.com/machines/7) are:  

@@ -1,6 +1,6 @@
-# * Nineveh
+# Nineveh
 
-`* still in progress`
+`still in progress`
 ## Recon
 
 Tags for [this box](https://app.hackthebox.com/machines/54):  
