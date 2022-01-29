@@ -1,4 +1,6 @@
-# Recon
+# Hackpark
+
+## Recon
 
 The intro mentions
 
@@ -6,28 +8,28 @@ The intro mentions
 - **Priv Esc** Windows
 - **Ping is off**
 
-# Scanning
+## Scanning
 
 Since ping is off, we will need to use the -Pn flag.
 `nmap -PnV -T5 10.10.38.171`
 
 ![[afd75a6c2d9443f0b7c9beeab2f3c243.png]]
 
-## Web Server :80
+### Web Server :80
 
-### Browser
+#### Browser
 
 ![[9fe2c03ef4844f40b8b92e9bbc27cfba.png]]
 
-### Whatweb scan
+#### Whatweb scan
 
 ![[ffe70124ea124acda48998b70c4bb90d.png]]
 
-### Wappalyzer addon
+#### Wappalyzer addon
 
 ![[c682663c9b224b60a34dcd2374bc3dca.png]]
 
-## Plan
+### Plan
 
 - [x] Need to find a login page
     **/admin**
@@ -50,7 +52,7 @@ Next steps
 Initial Foothold
 <img src=":/3e1cde9f3ecd460bba6414a2a334531b" alt="631008e8abf64d5f53fe51dbab2606ae.png" width="921" height="287">
 
-# Enumeration
+## Enumeration
 
 SystemInfo
 ![[30e289b93cb942eb90d4c4ecffae2220.png]]
@@ -58,7 +60,7 @@ SystemInfo
 Users
 ![[ec38dc36e63f454690bfeab2b1c79b42.png]]
 
-# Exploit
+## Exploit
 
 Uploaded a **reverse meterpreter** using the same method as 46353.cs
 ![[3ccdd80cc9ed49598e2b7180622904e4.png]]

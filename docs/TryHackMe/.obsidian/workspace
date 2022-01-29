@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Mr Robot.md",
+            "file": "Vulnversity.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mr Robot.md",
+                "file": "Vulnversity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,11 +88,15 @@
   },
   "active": "9249eac710ee11dd",
   "lastOpenFiles": [
+    "Vulnversity.md",
+    "tomghost.md",
+    "steelmountain.md",
+    "Skynet.md",
+    "relevant.md",
+    "overpass2hacked.md",
     "Mr Robot.md",
     "internal.md",
-    "hackpack.md",
-    "Alfred.md",
-    "In Process/Daily Bugle.md",
-    "relevant.md"
+    "hackpark.md",
+    "Alfred.md"
   ]
 }
