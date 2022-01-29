@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "relevant.md",
+            "file": "Mr Robot.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 170
   },
   "right": {
     "id": "b7317ddee0fb056a",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "relevant.md",
+                "file": "Mr Robot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,11 @@
   },
   "active": "9249eac710ee11dd",
   "lastOpenFiles": [
+    "Mr Robot.md",
+    "internal.md",
+    "hackpack.md",
+    "Alfred.md",
+    "In Process/Daily Bugle.md",
     "relevant.md"
   ]
 }
