@@ -9,10 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "0. Intro.md",
+            "file": "6. Sense.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "13ebaa428775c326"
+      },
+      {
+        "id": "5dcf3476abfdf8bd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "6. Sense.md",
+            "mode": "preview"
+          }
+        },
+        "group": "13ebaa428775c326"
       }
     ],
     "direction": "vertical"
@@ -68,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Intro.md",
+                "file": "6. Sense.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,13 +101,13 @@
   },
   "active": "8bc7cb5545c5e59f",
   "lastOpenFiles": [
-    "0. Intro.md",
     "6. Sense.md",
     "5. Sauna.md",
     "4. Forest.md",
     "3. Cronos.md",
     "2. Chatterbox.md",
     "1. Cascade.md",
+    "0. Intro.md",
     "Pasted image 20220203075427.png"
   ]
 }
