@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "0. Intro.md",
-            "mode": "source"
+            "file": "1. 10.10.10.182.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Intro.md",
+                "file": "1. 10.10.10.182.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +88,9 @@
   },
   "active": "8bc7cb5545c5e59f",
   "lastOpenFiles": [
+    "1. 10.10.10.182.md",
     "0. Intro.md",
     "Untitled.md",
-    "2. 10.10.10.74.md",
-    "1. 10.10.10.182.md"
+    "2. 10.10.10.74.md"
   ]
 }
