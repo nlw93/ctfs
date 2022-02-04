@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Cascade.md",
+            "file": "0. Intro.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Cascade.md",
+            "file": "0. Intro.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Cascade.md",
+                "file": "0. Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,12 +101,12 @@
   },
   "active": "8bc7cb5545c5e59f",
   "lastOpenFiles": [
-    "1. Cascade.md",
     "0. Intro.md",
-    "5. Sauna.md",
-    "6. Sense.md",
     "2. Chatterbox.md",
     "3. Cronos.md",
+    "1. Cascade.md",
+    "5. Sauna.md",
+    "6. Sense.md",
     "4. Forest.md",
     "Pasted image 20220203075427.png"
   ]
