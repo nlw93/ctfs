@@ -4,28 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "8bc7cb5545c5e59f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "0. Intro.md",
-            "mode": "source"
+        "id": "d030bd5b1f67c73d",
+        "type": "split",
+        "children": [
+          {
+            "id": "8bc7cb5545c5e59f",
+            "type": "leaf",
+            "dimension": 28.71287128712871,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6. Sense.md",
+                "mode": "source"
+              }
+            },
+            "group": "13ebaa428775c326"
+          },
+          {
+            "id": "5dcf3476abfdf8bd",
+            "type": "leaf",
+            "dimension": 71.28712871287128,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6. Sense.md",
+                "mode": "preview"
+              }
+            },
+            "group": "13ebaa428775c326"
           }
-        },
-        "group": "13ebaa428775c326"
-      },
-      {
-        "id": "5dcf3476abfdf8bd",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "0. Intro.md",
-            "mode": "preview"
-          }
-        },
-        "group": "13ebaa428775c326"
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -65,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f5260bcf2ee34d81",
@@ -81,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Intro.md",
+                "file": "6. Sense.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,13 +111,13 @@
   },
   "active": "8bc7cb5545c5e59f",
   "lastOpenFiles": [
-    "0. Intro.md",
     "6. Sense.md",
+    "0. Intro.md",
     "5. Sauna.md",
     "4. Forest.md",
-    "1. Cascade.md",
     "3. Cronos.md",
     "2. Chatterbox.md",
+    "1. Cascade.md",
     "Pasted image 20220203075427.png"
   ]
 }
