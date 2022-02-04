@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "6. Sense.md",
+            "file": "0. Intro.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "6. Sense.md",
+            "file": "0. Intro.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6. Sense.md",
+                "file": "0. Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5dcf3476abfdf8bd",
+  "active": "8bc7cb5545c5e59f",
   "lastOpenFiles": [
+    "0. Intro.md",
     "6. Sense.md",
     "3. Cronos.md",
     "2. Chatterbox.md",
     "1. Cascade.md",
     "5. Sauna.md",
     "4. Forest.md",
-    "0. Intro.md",
     "Pasted image 20220203075427.png"
   ]
 }
