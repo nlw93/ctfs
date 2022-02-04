@@ -10,12 +10,12 @@
           {
             "id": "8bc7cb5545c5e59f",
             "type": "leaf",
-            "dimension": 28.71287128712871,
+            "dimension": 43.87550200803213,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6. Sense.md",
-                "mode": "source"
+                "file": "0. Intro.md",
+                "mode": "preview"
               }
             },
             "group": "13ebaa428775c326"
@@ -23,12 +23,12 @@
           {
             "id": "5dcf3476abfdf8bd",
             "type": "leaf",
-            "dimension": 71.28712871287128,
+            "dimension": 56.12449799196787,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6. Sense.md",
-                "mode": "preview"
+                "file": "0. Intro.md",
+                "mode": "source"
               }
             },
             "group": "13ebaa428775c326"
@@ -74,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f5260bcf2ee34d81",
@@ -91,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6. Sense.md",
+                "file": "0. Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +108,16 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8bc7cb5545c5e59f",
+  "active": "5dcf3476abfdf8bd",
   "lastOpenFiles": [
-    "6. Sense.md",
     "0. Intro.md",
+    "Untitled.md",
+    "Pasted image 20220203075427.png",
+    "1. Cascade.md",
+    "6. Sense.md",
     "5. Sauna.md",
     "4. Forest.md",
     "3. Cronos.md",
-    "2. Chatterbox.md",
-    "1. Cascade.md",
-    "Pasted image 20220203075427.png"
+    "2. Chatterbox.md"
   ]
 }
