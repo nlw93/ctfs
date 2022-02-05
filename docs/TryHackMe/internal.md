@@ -386,3 +386,18 @@ pass `wordpress123`
 admin
 user `phpmyadmin`
 pass `B2Ud4fEOZmVq`
+
+
+
+# PrivEsc
+After reviewing the privesc materials again, I'm confident the exploit will either be
+
+- Some internal only port
+
+![[Pasted image 20220205100624.png]]
+
+- Some other foothold that grants higher level than `www-data`
+- A kernel exploit
+![[Pasted image 20220205100754.png]]
+![[Pasted image 20220205100826.png]]
+
