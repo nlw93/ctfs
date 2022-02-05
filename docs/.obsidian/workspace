@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "index.md",
+            "file": "TryHackMe/In Process/relevant.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "TryHackMe/In Process/relevant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "72dd90a55b49cb5e",
   "lastOpenFiles": [
+    "TryHackMe/In Process/relevant.md",
     "index.md"
   ]
 }

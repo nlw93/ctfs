@@ -12,7 +12,7 @@
 5. Find and report ALL vulnerabilities.
 
 ## nmap scan
-```
+```bash
 └─$ nmap -sV -T5 10.10.89.145 | tee quickscan
 
 Starting Nmap 7.92 ( https://nmap.org ) at 2021-11-04 21:29 CDT
@@ -26,6 +26,7 @@ PORT     STATE SERVICE            VERSION
 139/tcp  open  netbios-ssn        Microsoft Windows netbios-ssn
 445/tcp  open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
 3389/tcp open  ssl/ms-wbt-server?
+49663/tcp open  http          syn-ack ttl 125 Microsoft IIS httpd 10.0                                            49667/tcp open  msrpc         syn-ack ttl 125 Microsoft Windows RPC                                               49669/tcp open  msrpc         syn-ack ttl 125 Microsoft Windows RPC
 
 Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
 
@@ -35,7 +36,7 @@ Nmap done: 1 IP address (1 host up) scanned in 100.75 seconds
 
 # Service Enumeration
 For the service enumeration, a more thorough scan was needed.
-```
+```bash
 nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN full_tcp_nmap.txt 10.10.89.145
 ```
 
@@ -45,7 +46,7 @@ nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN full_t
 
 ## :135 - Microsoft Windows RPC
 Many services exposed via RCP.
-```
+```text
 Provider: appinfo.dll
 Provider: BFE.DLL
 Provider: certprop.dll
@@ -83,12 +84,6 @@ Protocol: [MS-SCMR]: Service Control Manager Remote Protocol
 Protocol: [MS-TSCH]: Task Scheduler Service Remoting Protocol
 ```
 
-`$ searchsploit windows RPC`
-```
-Microsoft DNS RPC Service - 'extractQuotedChar()' Remote Overflow 'SMB' (MS07-029) (Metasploit)                                                            | windows/remote/16366.rb
-Microsoft DNS RPC Service - 'extractQuotedChar()' TCP Overflow (MS07-029) (Metasploit)                                                                     | windows/remote/16748.rb
-
-```
 ## :139 - Microsoft Windows netbios-ssn
 nothing worth noting.
 
@@ -110,38 +105,31 @@ Bill - Juw4nnaM4n420696969!$$$
 ```
 
 ____
-Username: `Bob`
-Password: `!P@$$W0rD!123`
+Username: 
+```
+Bob
+```
+Password: 
+```
+!P@$$W0rD!123
+```
 
 ---
-Username: `Bill`
-Password: `Juw4nnaM4n420696969!$$$`
+Username: 
+```
+Bill
+```
+Password: 
+```
+Juw4nnaM4n420696969!$$$
+```
 
 ----
 **Wonder what those credentials are for?**
 Check these Vulnerabilities
 ![[39bb167de7544f2c81d97d85e8d9e727.png]]
-```
-$ searchsploit ms10-061     
------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
- Exploit Title                                                                                                                                             |  Path
------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
-Microsoft Windows - Print Spooler Service Impersonation (MS10-061) (Metasploit)                                                                            | windows/remote/16361.rb
------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
-```
-```
-$ searchsploit ms17-010
------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
- Exploit Title                                                                                                                                             |  Path
------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
-Microsoft Windows - 'EternalRomance'/'EternalSynergy'/'EternalChampion' SMB Remote Code Execution (Metasploit) (MS17-010)                                  | windows/remote/43970.rb
-Microsoft Windows - SMB Remote Code Execution Scanner (MS17-010) (Metasploit)                                                                              | windows/dos/41891.rb
-Microsoft Windows 7/2008 R2 - 'EternalBlue' SMB Remote Code Execution (MS17-010)                                                                           | windows/remote/42031.py
-Microsoft Windows 7/8.1/2008 R2/2012 R2/2016 R2 - 'EternalBlue' SMB Remote Code Execution (MS17-010)                                                       | windows/remote/42315.py
-Microsoft Windows 8/8.1/2012 R2 (x64) - 'EternalBlue' SMB Remote Code Execution (MS17-010)                                                                 | windows_x86-64/remote/42030.py
-Microsoft Windows Server 2008 R2 (x64) - 'SrvOs2FeaToNt' SMB Remote Code Execution (MS17-010)                                                              | windows_x86-64/remote/41987.py
------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
-```
+
+
 
 ## :3389 - Microsoft Terminal Services
 Rdp, not much about it on there. Credentials didn't work with RDP.
@@ -149,10 +137,7 @@ Rdp, not much about it on there. Credentials didn't work with RDP.
 ## :49663 - IIS  10.0
  X-Powered-By: ASP.NET
  **page never loads in browser**
-## :49667 - RPC
-Impacket v0.9.22
-## :49669 - RPC
-Impacket v0.9.22
+
 ## OS Guess: 
 ### Windows Server 2008 R2
 You're my boy Blue!
@@ -160,6 +145,9 @@ You're my boy Blue!
 ### Windows Server 2016 Standard Evaluation 14393 (Windows Server 2016 Standard Evaluation 6.3)
 
 ### Microsoft Windows Server 2016 (90%)
+
+![[Pasted image 20220204224604.png]]
+
 
 
 
