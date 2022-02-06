@@ -388,6 +388,22 @@ user `phpmyadmin`
 pass `B2Ud4fEOZmVq`
 
 
+## Check out William's Account
+user
+```text
+william
+```
+pass
+```text
+arnold147
+```
+
+
+
+## Internal: Jenkins
+Found out Jenkins is running on 8080. I did some SSH remote forwarding and am able to access Jenkins.
+![[Pasted image 20220205104928.png]]
+
 
 # PrivEsc
 After reviewing the privesc materials again, I'm confident the exploit will either be
