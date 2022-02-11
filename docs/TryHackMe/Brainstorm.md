@@ -82,3 +82,19 @@ local: chatserver.exe remote: chatserver.exe
 
 
 
+
+
+
+
+It appears to be working. Will not have to to do anything crafty with the network.
+
+![[Pasted image 20220210233944.png]]
+
+Then install immunity, which also installs python. The python installer failed the first time around so I selected "Install just for this user" the second time around. Not sure if it was coincidence or lucky guess but it worked. Lets get crackin!
+
+Actually immunity wouldn't boot as it coulnd't find the python files. So I'm moving this project to a dev version of Windows 11 I have installed in the lab. It'll be a good first look at Windows 11 anyways.
+
+
+
+
+
