@@ -9,10 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/index.md",
+            "file": "docs/TryHackMe/Brainstorm.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "3c47c4fab60da9e9"
+      },
+      {
+        "id": "c3bac568e85b51d4",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "docs/TryHackMe/Brainstorm.md",
+            "mode": "preview"
+          }
+        },
+        "group": "3c47c4fab60da9e9"
       }
     ],
     "direction": "vertical"
@@ -68,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/TryHackMe/Brainstorm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +101,13 @@
   },
   "active": "070a438501542d4b",
   "lastOpenFiles": [
+    "docs/TryHackMe/Brainstorm.md",
+    "docs/TryHackMe/steelmountain.md",
+    "docs/TryHackMe/tomghost.md",
+    "docs/TryHackMe/overpass2hacked.md",
+    "docs/TryHackMe/Work in Progress/relevant.md",
+    "docs/TryHackMe/Work in Progress/BufferOverFlowPrep.md",
+    "docs/TryHackMe/Work in Progress/Daily Bugle.md",
     "docs/index.md"
   ]
 }
