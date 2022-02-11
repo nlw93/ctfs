@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "In Process/BufferOverFlowPrep.md",
+            "file": "Brainstorm.md",
             "mode": "source"
           }
         }
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331,
-    "collapsed": true
+    "width": 331
   },
   "right": {
     "id": "b7317ddee0fb056a",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "In Process/BufferOverFlowPrep.md",
+                "file": "Brainstorm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,7 +88,8 @@
   },
   "active": "9249eac710ee11dd",
   "lastOpenFiles": [
-    "In Process/BufferOverFlowPrep.md",
+    "Brainstorm.md",
+    "BufferOverFlowPrep.md",
     "internal.md",
     "Alfred.md",
     "In Process/relevant.md",
@@ -97,7 +97,6 @@
     "Skynet.md",
     "In Process/Daily Bugle.md",
     "Vulnversity.md",
-    "tomghost.md",
-    "steelmountain.md"
+    "tomghost.md"
   ]
 }
