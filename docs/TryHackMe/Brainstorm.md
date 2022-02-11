@@ -9,7 +9,7 @@ This room is a bit challenging. The scan shows ftp (21) and some chat client (99
 
 #### FTP
 Anonymous login is allowed. I logged in with user `ftp` and pass `ftp` but kept hitting an error about **Extended Passive Mode.**. I did some reasearch to refresh my memory on what this was.
-```
+```bash
 ftp 10.10.109.7
 Connected to 10.10.109.7.
 220 Microsoft FTP Service
@@ -25,7 +25,7 @@ ftp> ls
 Long story short, you need to force active mode since passive mode is failing. I spent a lot of time googling this error and reading about how to fix it. But the answer was right in the damn man page; need to force active mode with the `-A` flag.
 
 ```bash
-$> ftp 10.10.109.7 -A                                                      
+ftp 10.10.109.7 -A                                                      
 Connected to 10.10.109.7.                                                                                      
 220 Microsoft FTP Service
 Name (10.10.109.7:nate): ftp                                                                                   
@@ -110,8 +110,26 @@ I see online this error is from using the 64-bit python and using a 32bit versio
 
 Also, I need to install [mona](https://github.com/corelan/mona). Wow, setting up this environment is a PITA - it was nice having a box ready on TryHackMe for the other challenges. I'll have to save this setup.
 
+Another issue - since the file was downloaded from the internet, it has to be marked as safe in the file properties before it can be used.
+
+![[Pasted image 20220211015656.png]]
+
+Another issue I ran into was the `mona.py` file was full of HTML as I downloaded it incorrectly. Found that [here on github](https://github.com/corelan/mona/issues/15)
 
 
+IT WORKS!!!!
 
+Getting a snapshot...
+
+I used the buffer overflow helper script I made and got this box done MUCH quicker than I was able to get the DEV environment set up. 
+![[Pasted image 20220211021145.png]]
+
+I never turned off Windows AV module so I only had access for a bit before getting kicked.
+
+![[Pasted image 20220211021322.png]]
+
+The completed exploit is as follows:
+
+```python3
 
 
