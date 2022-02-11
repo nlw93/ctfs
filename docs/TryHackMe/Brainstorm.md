@@ -94,6 +94,23 @@ Then install immunity, which also installs python. The python installer failed t
 
 Actually immunity wouldn't boot as it coulnd't find the python files. So I'm moving this project to a dev version of Windows 11 I have installed in the lab. It'll be a good first look at Windows 11 anyways.
 
+I was able to get everything working in Windows 11. Had to configure Windows firewall to allow port 9999 though.
+
+Everything is working!
+
+![[Pasted image 20220211005230.png]]
+
+Seems like the overflow will be in the username. Lets fire up the tool.
+
+Looks like I spoke too soon about everything working. I got an error when trying to run a `!mona` command.
+
+> pycommands: error importing module
+
+I see online this error is from using the 64-bit python and using a 32bit version should fix it. So...reinstall python with x86 version.
+
+Also, I need to install [mona](https://github.com/corelan/mona). Wow, setting up this environment is a PITA - it was nice having a box ready on TryHackMe for the other challenges. I'll have to save this setup.
+
+
 
 
 
