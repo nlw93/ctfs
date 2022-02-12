@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/TryHackMe/Brainstorm.md",
+            "file": "Gatekeeper.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/TryHackMe/Brainstorm.md",
+            "file": "Gatekeeper.md",
             "mode": "preview"
           }
         },
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "certutil",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/TryHackMe/Brainstorm.md",
+                "file": "Gatekeeper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +102,7 @@
   },
   "active": "070a438501542d4b",
   "lastOpenFiles": [
+    "Gatekeeper.md",
     "docs/TryHackMe/Brainstorm.md",
     "docs/TryHackMe/steelmountain.md",
     "docs/TryHackMe/tomghost.md",
