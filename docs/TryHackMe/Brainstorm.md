@@ -80,19 +80,22 @@ local: chatserver.exe remote: chatserver.exe
 226 Transfer complete.
 ```
 
+## Exploit Development
+### Setting up the Dev environment
 
+#### Setting up the sandbox
 
-
-
-
+Now I'll set up a Windows Dev environment in Windows Sandbox (I don't want to run this executable on my PC.)
 
 It appears to be working. Will not have to to do anything crafty with the network.
 
 ![[Pasted image 20220210233944.png]]
 
+#### Immunity and python
+
 Then install immunity, which also installs python. The python installer failed the first time around so I selected "Install just for this user" the second time around. Not sure if it was coincidence or lucky guess but it worked. Lets get crackin!
 
-Actually immunity wouldn't boot as it coulnd't find the python files. So I'm moving this project to a dev version of Windows 11 I have installed in the lab. It'll be a good first look at Windows 11 anyways.
+Actually immunity wouldn't boot as it coulnd't find the python files. So I'm moving this project to a dev version of Windows 11 I have installed in the lab. It'll be a good first look at Windows 11 anyways. EDIT: Turns out it had nothing to do with the sandbox. It's possible this would have worked if I did all the below fixes, but everything is lost from a sandbox when the session is closed. It's probably better to use a VM anyways so I can maintain the debugging environment.
 
 I was able to get everything working in Windows 11. Had to configure Windows firewall to allow port 9999 though.
 
@@ -101,6 +104,8 @@ Everything is working!
 ![[Pasted image 20220211005230.png]]
 
 Seems like the overflow will be in the username. Lets fire up the tool.
+
+#### Mona
 
 Looks like I spoke too soon about everything working. I got an error when trying to run a `!mona` command.
 
@@ -116,10 +121,13 @@ Another issue - since the file was downloaded from the internet, it has to be ma
 
 Another issue I ran into was the `mona.py` file was full of HTML as I downloaded it incorrectly. Found that [here on github](https://github.com/corelan/mona/issues/15)
 
+#### I never want to go through this again
 
 IT WORKS!!!!
 
 Getting a snapshot...
+
+### Develop the exploit
 
 I used the buffer overflow helper script I made and got this box done MUCH quicker than I was able to get the DEV environment set up. 
 ![[Pasted image 20220211021145.png]]
@@ -161,7 +169,12 @@ except:
 ```
 
 
+## Exploit the target
+
 Now to swap out the payload (line 15) and the RHOST IP (line 5).
 
 Time to test the exploit.
 
+Nice, I got a system shell!
+
+![[Pasted image 20220211023245.png]]
