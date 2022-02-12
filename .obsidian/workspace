@@ -7,11 +7,8 @@
         "id": "070a438501542d4b",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Gatekeeper.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         },
         "group": "3c47c4fab60da9e9"
       },
@@ -19,11 +16,8 @@
         "id": "c3bac568e85b51d4",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Gatekeeper.md",
-            "mode": "preview"
-          }
+          "type": "empty",
+          "state": {}
         },
         "group": "3c47c4fab60da9e9"
       }
@@ -82,7 +76,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gatekeeper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
