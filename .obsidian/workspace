@@ -7,8 +7,11 @@
         "id": "070a438501542d4b",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "docs/TryHackMe/Gatekeeper.md",
+            "mode": "source"
+          }
         },
         "group": "3c47c4fab60da9e9"
       },
@@ -16,8 +19,11 @@
         "id": "c3bac568e85b51d4",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "docs/TryHackMe/Gatekeeper.md",
+            "mode": "preview"
+          }
         },
         "group": "3c47c4fab60da9e9"
       }
@@ -46,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "certutil",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -55,12 +61,12 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d41ae2d449daf1eb",
@@ -76,6 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/TryHackMe/Gatekeeper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,6 +102,7 @@
   },
   "active": "070a438501542d4b",
   "lastOpenFiles": [
+    "docs/TryHackMe/Gatekeeper.md",
     "Gatekeeper.md",
     "docs/TryHackMe/Brainstorm.md",
     "docs/TryHackMe/steelmountain.md",
