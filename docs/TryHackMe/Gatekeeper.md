@@ -195,7 +195,7 @@ I used `WinPEAS.bat` to enumerate from the inside.
 >The Firewall is up and running a Standard profile.
 
 > Allowed programs configuration for Standard profile:                               
-Mode     Traffic direction    Name / Program                                             
+> Mode     Traffic direction    Name / Program                                             
 Enable   Inbound              dostackbufferoverflowgood.exe / C:\users\mayor\desktop\dostackbufferoverflowgood.exe
 
 There seems to be some file `dostackbufferoverflowgood.exe`. I did see one internal port running...
@@ -205,4 +205,17 @@ Found 2 ports that are open internally only:
 >   UDP    127.0.0.1:1900         *:*                                    2200
   UDP    127.0.0.1:57514        *:*                                    2200
 
+Couldn't set up port forwarding because I'm not admin.
+
+
+
+## Beware of fire
+
+It's been a few days since I gained initial access to this box. I was thinking tonight about the clues on this box and was trying to figure out what this meant:
+
+> there's fire on the other side.
+
+There were some ports that were only available on localhost, so in a sense that would be like a firewall. I thought this was the fire. Tonight I really wanted to dig in and see if this "fire on the other side" was a firewall or something else. As I was reviewing the software I remembered Firefox is instlled on this one. I remember seeing a *.lnk file right next to the user.txt.
+
+I think I brushed this off initially as a "too-obvious" rabbit-hole type of trap...but maybe the answer was staring me in the face the whole time.
 
