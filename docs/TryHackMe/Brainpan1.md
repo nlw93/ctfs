@@ -87,29 +87,36 @@ The shell was still pretty unstable and unpredictable, so I ran linpeas and down
 >  [1] dirty_cow
       CVE-2016-5195
       Source: http://www.exploit-db.com/exploits/40616
-  [2] exploit_x
+>  [2] exploit_x
       CVE-2018-14665
       Source: http://www.exploit-db.com/exploits/45697
-  [3] msr
+>  [3] msr
       CVE-2013-0268
       Source: http://www.exploit-db.com/exploits/27297
-  [4] perf_swevent
+>  [4] perf_swevent
       CVE-2013-2094
       Source: http://www.exploit-db.com/exploits/26131
-  [5] pp_key
+>  [5] pp_key
       CVE-2016-0728
       Source: http://www.exploit-db.com/exploits/39277
-  [6] timeoutpwn
+>  [6] timeoutpwn
       CVE-2014-0038
       Source: http://www.exploit-db.com/exploits/31346
 
 The output is messy, but it appears cron is running and the standard crontab file has an entry that starts chksrv.sh (the script that starts brainpan.exe).
 
 > # m h  dom mon dow   command
- * * * * * /home/puck/checksrv.sh
+> * * * * * /home/puck/checksrv.sh
 
 
 > User puck may run the following commands on this host:
-    (root) NOPASSWD: /home/anansi/bin/anansi_util
+>    (root) NOPASSWD: /home/anansi/bin/anansi_util
+
+> ╔══════════╣ .sh files in path
+> ╚ https://book.hacktricks.xyz/linux-unix/privilege-esca
+> lation#script-binaries-in-path
+> /usr/bin/gettext.sh
+
+I was investigating the crontab file to see if I could gain execution somehow. I don't have write access to crontab, or the script it calls...but wait. The brainpan executable was in my users's home directory. Maybe have write permissions to it.
 
 
