@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Brainpan1.md",
+            "file": "docs/TryHackMe/Blueprint.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Brainpan1.md",
+            "file": "docs/TryHackMe/Blueprint.md",
             "mode": "preview"
           }
         },
@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brainpan1.md",
+                "file": "docs/TryHackMe/Blueprint.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,6 +101,8 @@
   },
   "active": "070a438501542d4b",
   "lastOpenFiles": [
+    "docs/TryHackMe/Blueprint.md",
+    "docs/TryHackMe/Vulnnet Roasted.md",
     "Brainpan1.md",
     "docs/TryHackMe/Gatekeeper.md",
     "Gatekeeper.md",
@@ -109,8 +110,6 @@
     "docs/TryHackMe/steelmountain.md",
     "docs/TryHackMe/tomghost.md",
     "docs/TryHackMe/overpass2hacked.md",
-    "docs/TryHackMe/Work in Progress/relevant.md",
-    "docs/TryHackMe/Work in Progress/BufferOverFlowPrep.md",
-    "docs/TryHackMe/Work in Progress/Daily Bugle.md"
+    "docs/TryHackMe/Work in Progress/relevant.md"
   ]
 }
