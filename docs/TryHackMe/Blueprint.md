@@ -54,9 +54,14 @@ Aggressive OS guesses: Microsoft Server 2008 R2 SP1 (96%), Microsoft Windows 7 o
 
 ```
 
+## Enumeration
+
 I went against what I normally do and headed for the webserver first. It's running some CMS I haven't heard of before `osCommerce Online Merchang v2.3.4`. The version is leaked in the webapp's URL.
 
 I was able to find a few exploits for this using searchsploit, I chose to test the most recent RCE exploit `50128.py`
+
+
+## Exploitation 
 
 This exploit was failing out of the box because the webserver is using a self-signed cert...I just added `verify=False` to the parameter list of each `request.*()` call to bypass this. The exploit gives me an incomplete root RCE shell. I quickly jumped over to a reverse tcp shell which I generated using msfvenom.
 
