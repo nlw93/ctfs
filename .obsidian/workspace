@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/TryHackMe/Blueprint.md",
+            "file": "docs/TryHackMe/Vulnnet Roasted.md",
             "mode": "source"
           }
         },
@@ -21,8 +21,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/TryHackMe/Blueprint.md",
-            "mode": "preview"
+            "file": "docs/TryHackMe/Vulnnet Roasted.md",
+            "mode": "source"
           }
         },
         "group": "3c47c4fab60da9e9"
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/TryHackMe/Blueprint.md",
+                "file": "docs/TryHackMe/Vulnnet Roasted.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "070a438501542d4b",
   "lastOpenFiles": [
-    "docs/TryHackMe/Blueprint.md",
     "docs/TryHackMe/Vulnnet Roasted.md",
+    "docs/TryHackMe/Untitled.md",
+    "docs/TryHackMe/Blueprint.md",
     "Brainpan1.md",
     "docs/TryHackMe/Gatekeeper.md",
     "Gatekeeper.md",
     "docs/TryHackMe/Brainstorm.md",
     "docs/TryHackMe/steelmountain.md",
     "docs/TryHackMe/tomghost.md",
-    "docs/TryHackMe/overpass2hacked.md",
-    "docs/TryHackMe/Work in Progress/relevant.md"
+    "docs/TryHackMe/overpass2hacked.md"
   ]
 }
