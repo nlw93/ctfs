@@ -7,10 +7,9 @@
         "id": "72dd90a55b49cb5e",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "VulnHub/Lampiano.md",
-            "mode": "source"
+            "file": "Pasted image 20220505075752.png"
           }
         }
       },
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VulnHub/Lampiano.md",
+                "file": "Pasted image 20220505075752.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,9 +97,10 @@
   },
   "active": "72dd90a55b49cb5e",
   "lastOpenFiles": [
-    "VulnHub/Lampiano.md",
-    "VulnHub/Pasted image 20220505075716.png",
     "Pasted image 20220505075752.png",
+    "VulnHub/Pasted image 20220505075716.png",
+    "Pasted image 20220505111319.png",
+    "VulnHub/Lampiano.md",
     "VulnHub/Y0usef.md",
     "TryHackMe/Work in Progress/Anonymous.md",
     "index.md",
