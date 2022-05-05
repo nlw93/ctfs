@@ -9,11 +9,11 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Brainstorm.md",
+            "file": "Work in Progress/Anonymous.md",
             "mode": "source"
           }
         },
-        "group": "47037fd90e09337a"
+        "group": "74d8da5fed08a71f"
       },
       {
         "id": "edb50520b0aa2cc8",
@@ -21,11 +21,11 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Brainstorm.md",
+            "file": "Work in Progress/Anonymous.md",
             "mode": "preview"
           }
         },
-        "group": "47037fd90e09337a"
+        "group": "74d8da5fed08a71f"
       }
     ],
     "direction": "vertical"
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "jenkins",
+                "query": "active mode",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brainstorm.md",
+                "file": "Work in Progress/Anonymous.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "9249eac710ee11dd",
   "lastOpenFiles": [
+    "Work in Progress/Anonymous.md",
+    "Work in Progress/dogcat.md",
     "Brainstorm.md",
-    "BufferOverFlowPrep.md",
     "internal.md",
+    "Work in Progress/Ice.md",
+    "Work in Progress/relevant.md",
     "Alfred.md",
-    "In Process/relevant.md",
-    "hackpark.md",
-    "Skynet.md",
-    "In Process/Daily Bugle.md",
-    "Vulnversity.md",
-    "tomghost.md"
+    "Blueprint.md",
+    "Brainpan1.md",
+    "BufferOverFlowPrep.md"
   ]
 }
