@@ -1,0 +1,113 @@
+{
+  "main": {
+    "id": "90fd8ea298163f64",
+    "type": "split",
+    "children": [
+      {
+        "id": "597b4c38db49b3cb",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Lampiano.md",
+            "mode": "source"
+          }
+        },
+        "group": "ca153fe96cb932c3"
+      },
+      {
+        "id": "eeec7919d79dd1d9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Lampiano.md",
+            "mode": "source"
+          }
+        },
+        "group": "ca153fe96cb932c3"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0ddaeef050ebf6d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "50a11f87916b66e5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24b6a7903d82fae2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b96c261542fc4503",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cb747c90b3db6110",
+    "type": "split",
+    "children": [
+      {
+        "id": "261653ff09fbfc1c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80163c4a106101ba",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Lampiano.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "eeec7919d79dd1d9",
+  "lastOpenFiles": [
+    "Lampiano.md",
+    "Pasted image 20220505112416.png",
+    "Pasted image 20220505111648.png",
+    "Pasted image 20220505075716.png",
+    "Y0usef.md",
+    "Pasted image 20220505111319.png",
+    "Pasted image 20220505075752.png",
+    "Pasted image 20220505111319.png.md"
+  ]
+}
