@@ -24,9 +24,12 @@ I can only access `management.log`
 ![[Pasted image 20220508215501.png]]
 
 It looks like there are 2 files being executed on some interval:
+
 - `product-control` is being executed by UID: 1000
+
 - `web-control` is b eing executed by UID: 33
 
+![[Pasted image 20220508225848.png]]
 
 ## 139, 445 - SMB
 
