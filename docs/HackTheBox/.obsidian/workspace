@@ -4,35 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "a2aa18c8246d8223",
-        "type": "split",
-        "children": [
-          {
-            "id": "9a0e92dfd02a291b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "In Progress/Kotarak.md",
-                "mode": "preview"
-              }
-            },
-            "group": "f03708bea3ffc2a9"
-          },
-          {
-            "id": "aa0e8e0ef7e3b865",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "In Progress/Kotarak.md",
-                "mode": "source"
-              }
-            },
-            "group": "f03708bea3ffc2a9"
+        "id": "aa0e8e0ef7e3b865",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Timelapse.md",
+            "mode": "source"
           }
-        ],
-        "direction": "horizontal"
+        },
+        "group": "f03708bea3ffc2a9"
+      },
+      {
+        "id": "9a0e92dfd02a291b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Timelapse.md",
+            "mode": "preview"
+          }
+        },
+        "group": "f03708bea3ffc2a9"
       }
     ],
     "direction": "vertical"
@@ -88,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "In Progress/Kotarak.md",
+                "file": "Timelapse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,8 +99,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9a0e92dfd02a291b",
+  "active": "aa0e8e0ef7e3b865",
   "lastOpenFiles": [
+    "Timelapse.md",
     "In Progress/Kotarak.md",
     "In Progress/Relevant.md",
     "In Progress/ScriptKiddie.md",
@@ -116,7 +110,6 @@
     "In Progress/Solidstate.md",
     "Arctic.md",
     "In Progress/Bastard.md",
-    "In Progress/Breadcrumbs.md",
-    "In Progress/Nineveh.md"
+    "In Progress/Breadcrumbs.md"
   ]
 }
