@@ -6,10 +6,11 @@
       {
         "id": "597b4c38db49b3cb",
         "type": "leaf",
+        "dimension": 40.8974358974359,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Dawn.md",
+            "file": "DC-1.md",
             "mode": "source"
           }
         },
@@ -18,10 +19,11 @@
       {
         "id": "eeec7919d79dd1d9",
         "type": "leaf",
+        "dimension": 59.1025641025641,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Dawn.md",
+            "file": "DC-1.md",
             "mode": "preview"
           }
         },
@@ -81,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dawn.md",
+                "file": "DC-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +103,7 @@
   },
   "active": "597b4c38db49b3cb",
   "lastOpenFiles": [
+    "DC-1.md",
     "Dawn.md",
     "Cybersploit.md",
     "Cute.md",
@@ -109,7 +112,6 @@
     "Pasted image 20220505111648.png",
     "Pasted image 20220505075716.png",
     "Y0usef.md",
-    "Pasted image 20220505111319.png",
-    "Pasted image 20220505075752.png"
+    "Pasted image 20220505111319.png"
   ]
 }
