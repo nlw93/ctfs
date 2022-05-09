@@ -55,23 +55,28 @@ export TERM=xterm
 ## Enumerate Dawn
 
 Lets take a look at Dawn's files
+
 ![[Pasted image 20220508220119.png]]
 
 her bash history
+
 ![[Pasted image 20220508215954.png]]
 
 her mysql history
+
 ![[Pasted image 20220508220055.png]]
 
 # Linpeas findings
 /bin/zsh has the SUID bit set.
 
 I now have a root shell
+
 ![[Pasted image 20220508220942.png]]
 
 Normally this is where I"ll stop, but I wasn't satisfied. There is a still a MySQL database full of info I didn't exfiltrate.
 
 Tried hopping on the db as root:
+
 ![[Pasted image 20220508221643.png]]
 
 So I need root's password. Maybe I can change it? It's dirty, but I can backup `/etc/shadow` before changing root's password then restore it to cover my tracks when I'm done
@@ -105,6 +110,7 @@ waiiiit....I still can't get into the DB.
 Going to [reset the password](https://www.digitalocean.com/community/tutorials/how-to-reset-your-mysql-or-mariadb-root-password) so I can browse the DB to see what's in there.
 
 And I'm in
+
 ![[Pasted image 20220508224028.png]]
 
 Also, I was able to find the root password in `/root/.mysql_history`
