@@ -4,7 +4,10 @@
 
 ## Port scan
 ```nmap
-
+22/tcp    open  ssh     syn-ack ttl 64 OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)
+80/tcp    open  http    syn-ack ttl 64 Apache httpd 2.2.22 ((Debian))
+111/tcp   open  rpcbind syn-ack ttl 64 2-4 (RPC #100000)
+53381/tcp open  status  syn-ack ttl 64 1 (RPC #100024)
 ```
 
 ## Port 80: Drupal 7
