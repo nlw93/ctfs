@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Gaara.md",
+            "file": "Geisha.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Gaara.md",
+            "file": "Geisha.md",
             "mode": "preview"
           }
         },
@@ -67,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "cb747c90b3db6110",
@@ -84,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gaara.md",
+                "file": "Geisha.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,13 +103,13 @@
   },
   "active": "597b4c38db49b3cb",
   "lastOpenFiles": [
+    "Geisha.md",
     "Gaara.md",
     "Funbox Rookie.md",
     "Pasted image 20220505113408.png",
     "Funbox3.md",
     "Funbox EasyEnum.md",
     "Natraj.md",
-    "Geisha.md",
     "Assertion 101.md",
     "DC-2.md",
     "DC-1.md"
