@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/TryHackMe/Vulnnet Roasted.md",
+            "file": "docs/Other CTFs/Quiz 7.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/HackTheBox/Work in Progress/Brainfuck.md",
+            "file": "docs/Other CTFs/Quiz 7.md",
             "mode": "preview"
           }
         },
@@ -61,12 +61,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 415
   },
   "right": {
     "id": "d41ae2d449daf1eb",
@@ -82,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/HackTheBox/Work in Progress/Brainfuck.md",
+                "file": "docs/Other CTFs/Quiz 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,17 +101,15 @@
   },
   "active": "070a438501542d4b",
   "lastOpenFiles": [
+    "docs/Other CTFs/Quiz 7.md",
+    "docs/TryHackMe/Work in Progress/Throwback/10.200.70.219 Throwback-Prod.md",
+    "docs/TryHackMe/Vulnnet Roasted.md",
     "docs/HackTheBox/Work in Progress/Brainfuck.md",
     "docs/OSCP practice exam/6. Sense.md",
     "docs/TryHackMe/Blueprint.md",
-    "docs/TryHackMe/Vulnnet Roasted.md",
     "docs/TryHackMe/Untitled.md",
     "docs/TryHackMe/Blueprint.md",
     "Brainpan1.md",
-    "docs/TryHackMe/Gatekeeper.md",
-    "Gatekeeper.md",
-    "docs/TryHackMe/Brainstorm.md",
-    "docs/TryHackMe/steelmountain.md",
-    "docs/TryHackMe/tomghost.md"
+    "docs/TryHackMe/Gatekeeper.md"
   ]
 }
