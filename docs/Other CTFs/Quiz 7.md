@@ -41,11 +41,15 @@ This resembles base 64 encoding, so lets try that out in the recipe, and VOILA! 
 
 ![[Pasted image 20220626202216.png]]
 
+### Answer
+
 Our answer to part 1 is
 
 > The password and IV are "passwordpassword"
 
 ## Part 2
+
+### Challenge
 
 ```text
 ..-. ----- ..--- -.-. ...-- ---.. ..... ---.. ----- ...-- .- ..--- ..... -... ..-. --... -.-. ..--- ..--- --... ..-. ...-- .---- -.... .- -.-. . -.. .---- ---.. .---- ....- --... ----. -.-. -.. ...-- ..-. ----. ----- ...-- -... ---.. -.... -.. . ...-- . -... -.... ...-- -.. .- ----- -.. -.-. . . .- ..--- ..-. --... -.. .----
@@ -55,6 +59,7 @@ This part is incomplete, but at first glance I noticed the charset seemed to mat
 
 ![[Pasted image 20220626203126.png]]
 
+### Incomplete answer
 > F02C385803A25BF7C227F316ACED181479CD3F903B86DE3EB63DA0DCEEA2F7D1
 
 So, we decoded to this string, and have a `password and IV` which are both `passwordpassword`. If we were able to identify which cipher was used we would be able to decode this string further. Until then!
