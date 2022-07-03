@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PyExp.md",
+            "file": "Y0usef.md",
             "mode": "source"
           }
         },
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PyExp.md",
+            "file": "Y0usef.md",
             "mode": "preview"
           }
         },
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "1.104",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -83,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PyExp.md",
+                "file": "Y0usef.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,6 +104,7 @@
   },
   "active": "597b4c38db49b3cb",
   "lastOpenFiles": [
+    "Y0usef.md",
     "PyExp.md",
     "Potato.md",
     "Photographer.md",
@@ -111,7 +113,6 @@
     "Funbox EasyEnum.md",
     "DC-2.md",
     "DC-1.md",
-    "Dawn.md",
-    "Cute.md"
+    "Dawn.md"
   ]
 }
