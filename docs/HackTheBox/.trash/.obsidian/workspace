@@ -1,45 +1,29 @@
 {
   "main": {
-    "id": "97bfe9ffc0c0a5e1",
+    "id": "60ed0051a6c51754",
     "type": "split",
     "children": [
       {
-        "id": "aa0e8e0ef7e3b865",
+        "id": "119a7bf2c253f164",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Sauna.md",
-            "mode": "source"
-          }
-        },
-        "group": "f03708bea3ffc2a9"
-      },
-      {
-        "id": "9a0e92dfd02a291b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Sauna.md",
-            "mode": "preview"
-          }
-        },
-        "group": "f03708bea3ffc2a9"
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "e1f56175b467a425",
+    "id": "54c4ad69b9e8c8a5",
     "type": "split",
     "children": [
       {
-        "id": "3db7d6cbba24066f",
+        "id": "396e4eb4322c3802",
         "type": "tabs",
         "children": [
           {
-            "id": "889051a61bbec7ac",
+            "id": "7d235b6ec0220cf3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -47,7 +31,7 @@
             }
           },
           {
-            "id": "1cae23c8da56d8e7",
+            "id": "1475297337a6085a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -68,20 +52,19 @@
     "width": 300
   },
   "right": {
-    "id": "e0272d310a0a000a",
+    "id": "24a200a0a37e2f79",
     "type": "split",
     "children": [
       {
-        "id": "6d3d0b89c1e677ad",
+        "id": "8bdd3a61954e53cb",
         "type": "tabs",
         "children": [
           {
-            "id": "9ee07f7fb5542516",
+            "id": "9cab863c627ba3ed",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sauna.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +82,6 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aa0e8e0ef7e3b865",
-  "lastOpenFiles": [
-    "Sauna.md",
-    "Timelapse.md",
-    "In Progress/Kotarak.md",
-    "In Progress/Relevant.md",
-    "In Progress/ScriptKiddie.md",
-    "In Progress/Grandpa.md",
-    "In Progress/Granny.md",
-    "In Progress/Solidstate.md",
-    "Arctic.md",
-    "In Progress/Bastard.md"
-  ]
+  "active": "119a7bf2c253f164",
+  "lastOpenFiles": []
 }
