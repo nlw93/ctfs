@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Sauna.md",
-            "mode": "source"
+            "file": "Remote.md",
+            "mode": "source",
+            "source": false
           }
         },
         "group": "f03708bea3ffc2a9"
@@ -21,8 +22,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Sauna.md",
-            "mode": "preview"
+            "file": "Remote.md",
+            "mode": "preview",
+            "source": false
           }
         },
         "group": "f03708bea3ffc2a9"
@@ -81,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sauna.md",
+                "file": "Remote.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +103,15 @@
   },
   "active": "aa0e8e0ef7e3b865",
   "lastOpenFiles": [
+    "Search.md",
+    "Pasted image 20220713093106.png.md",
+    "Remote.md",
     "Sauna.md",
+    "Shocker.md",
+    "Legacy.md",
     "Timelapse.md",
     "In Progress/Kotarak.md",
     "In Progress/Relevant.md",
-    "In Progress/ScriptKiddie.md",
-    "In Progress/Grandpa.md",
-    "In Progress/Granny.md",
-    "In Progress/Solidstate.md",
-    "Arctic.md",
-    "In Progress/Bastard.md"
+    "In Progress/ScriptKiddie.md"
   ]
 }
