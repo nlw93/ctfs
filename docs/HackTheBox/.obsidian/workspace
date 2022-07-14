@@ -6,10 +6,11 @@
       {
         "id": "aa0e8e0ef7e3b865",
         "type": "leaf",
+        "dimension": 50.10869565217392,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Search.md",
+            "file": "Optimum.md",
             "mode": "source",
             "source": false
           }
@@ -19,10 +20,11 @@
       {
         "id": "9a0e92dfd02a291b",
         "type": "leaf",
+        "dimension": 49.89130434782609,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Search.md",
+            "file": "Optimum.md",
             "mode": "preview",
             "source": false
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Search.md",
+                "file": "Optimum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,8 +105,8 @@
   },
   "active": "aa0e8e0ef7e3b865",
   "lastOpenFiles": [
-    "Remote.md",
     "Search.md",
+    "Remote.md",
     "Pasted image 20220713093106.png.md",
     "Sauna.md",
     "Shocker.md",
