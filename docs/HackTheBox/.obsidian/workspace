@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "netmon.md",
+            "file": "Jerry.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "netmon.md",
+            "file": "Jerry.md",
             "mode": "preview",
             "source": false
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "netmon.md",
+                "file": "Jerry.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,15 +105,15 @@
   },
   "active": "aa0e8e0ef7e3b865",
   "lastOpenFiles": [
+    "Legacy.md",
+    "netmon.md",
     "Optimum.md",
     "Search.md",
     "Remote.md",
     "Pasted image 20220713093106.png.md",
     "Sauna.md",
     "Shocker.md",
-    "Legacy.md",
     "Timelapse.md",
-    "In Progress/Kotarak.md",
-    "In Progress/Relevant.md"
+    "In Progress/Kotarak.md"
   ]
 }
