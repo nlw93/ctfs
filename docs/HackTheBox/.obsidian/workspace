@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Granny.md",
+            "file": "Blue.md",
             "mode": "source",
             "source": false
           }
@@ -24,8 +24,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Granny.md",
-            "mode": "preview",
+            "file": "Blue.md",
+            "mode": "source",
             "source": false
           }
         },
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Granny.md",
+                "file": "Blue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,15 +105,15 @@
   },
   "active": "aa0e8e0ef7e3b865",
   "lastOpenFiles": [
+    "Devel.md",
+    "Work in Progress/Granny.md",
+    "Granny.md",
     "Heist.md",
     "Optimum.md",
     "netmon.md",
     "Lame.md",
     "Sauna.md",
     "Remote.md",
-    "Jerry.md",
-    "Legacy.md",
-    "Search.md",
-    "Pasted image 20220713093106.png.md"
+    "Jerry.md"
   ]
 }
